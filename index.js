@@ -1,6 +1,9 @@
-const price = [6, 2, 5, 7, 8, 3, 19];
+const price = [6, 2, 5, 7, 8, 3, 6];
 
 const profit = (price) => {
+    const result = {};
+    let minPrice = Math.min.apply(null, price);
+    let maxPrice = Math.max.apply(null, price);
     let arr = [];
     let profit = null;
     for (let i = 0; i < price.length - 1; i++) {
@@ -12,7 +15,12 @@ const profit = (price) => {
         profit = allDayProfit.reduce((cur, prev) => { return cur > prev ? cur : prev }, 0);
         arr.push(profit)
     }
-
-    return Math.max.apply(null, arr);
+    let bestProfit = Math.max.apply(null, arr);
+    result.bestDayBuy = price.indexOf(minPrice) + 1;
+    result.bestDaySell = price.indexOf(maxPrice) + 1;
+    result.profit = bestProfit;
+    return result;
 }
+
 console.log(profit(price))
+// profit(price)
