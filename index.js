@@ -1,18 +1,18 @@
-const price = [6, 2, 5, 7, 8, 3, 4];
+const price = [6, 2, 5, 7, 8, 3, 19];
 
 const profit = (price) => {
-    let fav = null;
     let arr = [];
-    for (let i = 0; i < price.length; i++) {
+    let profit = null;
+    for (let i = 0; i < price.length - 1; i++) {
         let allDayProfit = []
-        for (let j = i+1; j < price.length; j++) {
+        for (let j = i + 1; j < price.length; j++) {
             let curMax = price[j] - price[i];
             allDayProfit.push(curMax)
         }
-        console.log(allDayProfit)
+        profit = allDayProfit.reduce((cur, prev) => { return cur > prev ? cur : prev }, 0);
+        arr.push(profit)
     }
-  
-    return fav
+
+    return Math.max.apply(null, arr);
 }
-// console.log(profit(price))
-profit(price)
+console.log(profit(price))
