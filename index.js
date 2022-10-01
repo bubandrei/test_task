@@ -1,5 +1,5 @@
-const price = [6, 2, 5, 7, 8, 3, 6];
-const profit = (price) => {
+const price = [6, 2, 5, 9, 8, 3, 6];
+const maxProfit = (price) => {
     const result = {};
     let minPrice = Math.min.apply(null, price);
     let maxPrice = Math.max.apply(null, price);
@@ -21,4 +21,4 @@ const profit = (price) => {
     return result;
 }
 
-console.log(profit(price))
+console.log(maxProfit(price))
