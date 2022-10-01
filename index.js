@@ -1,5 +1,4 @@
 const price = [6, 2, 5, 7, 8, 3, 6];
-
 const profit = (price) => {
     const result = {};
     let minPrice = Math.min.apply(null, price);
@@ -23,4 +22,3 @@ const profit = (price) => {
 }
 
 console.log(profit(price))
-// profit(price)
