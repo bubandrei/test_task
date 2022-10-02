@@ -1,3 +1,10 @@
+// function fixTheMeerkat(arr) {
+// return arr.reverse()
+
+// }
+// console.log(fixTheMeerkat(["tail", "body", "head"]))
+
+////////////////////////////////////////////////////////////////////////////
 // const price = [6, 2, 5, 9, 8, 3, 6];
 // const maxProfit = (price) => {
 //     const result = {};
@@ -23,11 +30,13 @@
 
 // console.log(maxProfit(price))
 
-class SmallestIntegerFinder {
-    findSmallestInt(args) {
-      return Math.min.apply(null,args)
-    }
-  }
 
-  const num = new SmallestIntegerFinder;
-  console.log(num.findSmallestInt([1,2,3,4,5,6]))
+/////////////////////////////////////////////////////////////////////////////
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return Math.min.apply(null,args)
+//     }
+//   }
+
+//   const num = new SmallestIntegerFinder;
+//   console.log(num.findSmallestInt([1,2,3,4,5,6]))
