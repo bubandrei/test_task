@@ -1,14 +1,13 @@
-const sequenceSum = (begin, end, step) => {
-    console.log(end)
-    let sum = 0;
-    for (let i = begin; i <= end; i + step) {
-        console.log(i)
-        sum += i
-    }
-    console.log(sum)
-    return sum
-};
-sequenceSum(2, 6, 2)
+// const sequenceSum = (begin, end, step) => {
+//     let sum = 0;
+//     for (let i = begin; i <= end; i + step) {
+//         sum += i
+//     }
+//     return sum
+// };
+// sequenceSum(2, 6, 2)
+const a =1;
+console.log(a)
 
 
 
