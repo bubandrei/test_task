@@ -1,41 +1,49 @@
-let number = 6;
+// function sumTwoSmallestNumbers(numbers) {
+//     let result = numbers.sort((a, b) => a - b);
+//     return result[0]+result[1]
+// }
+// sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453])
 
-function balancedNum(number) {
-    let result = null;
-    let arr = number.toString().split('');
-    let numSym = arr.length;
-    let lrSide = null;
-    let lefSum = [];
-    let rightSum = [];
-    let summaLeft = 0;
-    let summaRight = 0;
-    numSym % 2 == 0 ? lrSide = numSym / 2 : lrSide = Math.floor(numSym / 2)
 
-    for (let i = 0; i < lrSide-1; i++) {
-        lefSum.push(+arr[i]);
-    }
-    for (let j = lrSide+1; j < numSym; j++) {
-        rightSum.push(+arr[j]);
-    }
-    summaLeft = lefSum.reduce((accum, prev) => {
-        return accum + prev
-    }, 0)
-    summaRight = rightSum.reduce((accum, prev) => {
-        return accum + prev
-    }, 0)
+////////////////////////////////////////////////////////////////////////////
+// let number = 6;
 
-    summaLeft == summaRight || numSym == 1? result = "Balanced" : result = "Not Balanced"
+// function balancedNum(number) {
+//     let result = null;
+//     let arr = number.toString().split('');
+//     let numSym = arr.length;
+//     let lrSide = null;
+//     let lefSum = [];
+//     let rightSum = [];
+//     let summaLeft = 0;
+//     let summaRight = 0;
+//     numSym % 2 == 0 ? lrSide = numSym / 2 : lrSide = Math.floor(numSym / 2)
 
-    // console.log(lrSide)
-    // console.log(lefSum)
-    // console.log(rightSum)
-    // console.log(summaLeft)
-    // console.log(summaRight)
-    console.log(result)
-    console.log(numSym)
-    return result
-}
-balancedNum(number)
+//     for (let i = 0; i < lrSide-1; i++) {
+//         lefSum.push(+arr[i]);
+//     }
+//     for (let j = lrSide+1; j < numSym; j++) {
+//         rightSum.push(+arr[j]);
+//     }
+//     summaLeft = lefSum.reduce((accum, prev) => {
+//         return accum + prev
+//     }, 0)
+//     summaRight = rightSum.reduce((accum, prev) => {
+//         return accum + prev
+//     }, 0)
+
+//     summaLeft == summaRight || numSym == 1? result = "Balanced" : result = "Not Balanced"
+
+//     // console.log(lrSide)
+//     // console.log(lefSum)
+//     // console.log(rightSum)
+//     // console.log(summaLeft)
+//     // console.log(summaRight)
+//     console.log(result)
+//     console.log(numSym)
+//     return result
+// }
+// balancedNum(number)
 
 
 
