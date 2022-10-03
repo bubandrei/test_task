@@ -1,3 +1,18 @@
+const sequenceSum = (begin, end, step) => {
+    console.log(end)
+    let sum = 0;
+    for (let i = begin; i <= end; i + step) {
+        console.log(i)
+        sum += i
+    }
+    console.log(sum)
+    return sum
+};
+sequenceSum(2, 6, 2)
+
+
+
+
 // function sumTwoSmallestNumbers(numbers) {
 //     let result = numbers.sort((a, b) => a - b);
 //     return result[0]+result[1]
