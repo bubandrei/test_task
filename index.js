@@ -1,18 +1,59 @@
+let number = 6;
+
+function balancedNum(number) {
+    let result = null;
+    let arr = number.toString().split('');
+    let numSym = arr.length;
+    let lrSide = null;
+    let lefSum = [];
+    let rightSum = [];
+    let summaLeft = 0;
+    let summaRight = 0;
+    numSym % 2 == 0 ? lrSide = numSym / 2 : lrSide = Math.floor(numSym / 2)
+
+    for (let i = 0; i < lrSide-1; i++) {
+        lefSum.push(+arr[i]);
+    }
+    for (let j = lrSide+1; j < numSym; j++) {
+        rightSum.push(+arr[j]);
+    }
+    summaLeft = lefSum.reduce((accum, prev) => {
+        return accum + prev
+    }, 0)
+    summaRight = rightSum.reduce((accum, prev) => {
+        return accum + prev
+    }, 0)
+
+    summaLeft == summaRight || numSym == 1? result = "Balanced" : result = "Not Balanced"
+
+    // console.log(lrSide)
+    // console.log(lefSum)
+    // console.log(rightSum)
+    // console.log(summaLeft)
+    // console.log(summaRight)
+    console.log(result)
+    console.log(numSym)
+    return result
+}
+balancedNum(number)
+
+
+
 // const array = [
 //     [4.23, 6.43], 1.23, 3.444, [1.342, 3.212]
 // ];
 
 // function sortByArea(arr) {
-  
+
 //     let sorted = [], result = []
-    
+
 //     arr.forEach((e, i) => (e.length == 2) ? sorted.push([i, e[0]*e[1]]) : sorted.push([i, Math.PI*e*e]))
-    
+
 //     sorted.sort((a, b) => (a[1] === b[1]) ? 0 : (a[1] < b[1]) ? -1 : 1)
-//       .forEach(e=> result.push(arr[e[0]]))
-    
+//       .forEach(e=> console.log(result.push(arr[e[0]])))
+
 //     return result
-                       
+
 //   }
 // console.log(sortByArea(array))
 // sortByArea(array)
