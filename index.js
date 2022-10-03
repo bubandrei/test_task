@@ -1,3 +1,27 @@
+function countSheeps(arrayOfSheep) {
+    let x = 0;
+    arrayOfSheep.forEach(element => {
+        element ? x += 1 : x;
+    });
+    return x
+}
+console.log(countSheeps([true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true]))
+
+
+
+
+
+
+
+
+
+
+
 // function fixTheMeerkat(arr) {
 // return arr.reverse()
 
