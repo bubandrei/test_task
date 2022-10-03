@@ -1,11 +1,24 @@
-const sequenceSum = (begin, end, step) => {
-        let sum = 0;
-       for(let i = begin; i<=end; i+=step){
-           sum += i
-       }
-       return sum
-   };
-sequenceSum(2, 6, 2)
+function squareArea(a) {
+    let r = ((a*4) / (2 * Math.PI));
+
+
+    return Math.pow(r, 2).toFixed(2)
+}
+// squareArea(20)
+console.log(squareArea(2))
+
+
+
+
+
+// const sequenceSum = (begin, end, step) => {
+//         let sum = 0;
+//        for(let i = begin; i<=end; i+=step){
+//            sum += i
+//        }
+//        return sum
+//    };
+// sequenceSum(2, 6, 2)
 
 
 
