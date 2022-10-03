@@ -1,27 +1,43 @@
-function countSheeps(arrayOfSheep) {
-    let x = 0;
-    arrayOfSheep.forEach(element => {
-        element ? x += 1 : x;
-    });
-    return x
-}
-console.log(countSheeps([true,  true,  true,  false,
-    true,  true,  true,  true ,
-    true,  false, true,  false,
-    true,  false, false, true ,
-    true,  true,  true,  true ,
-    false, false, true,  true]))
+// const array = [
+//     [4.23, 6.43], 1.23, 3.444, [1.342, 3.212]
+// ];
+
+// function sortByArea(arr) {
+  
+//     let sorted = [], result = []
+    
+//     arr.forEach((e, i) => (e.length == 2) ? sorted.push([i, e[0]*e[1]]) : sorted.push([i, Math.PI*e*e]))
+    
+//     sorted.sort((a, b) => (a[1] === b[1]) ? 0 : (a[1] < b[1]) ? -1 : 1)
+//       .forEach(e=> result.push(arr[e[0]]))
+    
+//     return result
+                       
+//   }
+// console.log(sortByArea(array))
+// sortByArea(array)
 
 
 
+// const array = [ [4.23, 6.43], 1.23, 3.444, [1.342, 3.212] ]; // [ rectangle, circle, circle, rectangle ]
+// sortByArea(array) => [ [ 1.342, 3.212 ], 1.23, [ 4.23, 6.43 ], 3.444 ]
 
+////////////////////////////////////////////////////////////////////////////
+// function countSheeps(arrayOfSheep) {
+//     let x = 0;
+//     arrayOfSheep.forEach(element => {
+//         element ? x += 1 : x;
+//     });
+//     return x
+// }
+// console.log(countSheeps([true,  true,  true,  false,
+//     true,  true,  true,  true ,
+//     true,  false, true,  false,
+//     true,  false, false, true ,
+//     true,  true,  true,  true ,
+//     false, false, true,  true]))
 
-
-
-
-
-
-
+////////////////////////////////////////////////////////////////////////////
 // function fixTheMeerkat(arr) {
 // return arr.reverse()
 
