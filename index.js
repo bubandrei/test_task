@@ -1,13 +1,35 @@
-function growingPlant(upSpeed, downSpeed, desiredHeight) {
-    let count = 0;
-    for (let i = upSpeed; i < desiredHeight; i = i + upSpeed) {
-        i = i - downSpeed
-        count++
+function getGrade(s1, s2, s3) {
+    let score = Math.floor((s1 + s2 + s3) / 3);
+    let result = '';
+    if (90 <= score) {
+        return result = 'A';
     }
-    console.log(count)
-    return count
+    if (80 <= score) {
+        return result = 'B';
+    }
+    if (70 <= score) {
+        return result = 'C';
+    }
+    if (60 <= score) {
+        return result = 'D';
+    }
+    if (0 <= score) {
+        return result = 'F';
+    }
+    return result
 }
-growingPlant(100, 55, 101)
+getGrade(60, 60, 92)
+////////////////////////////////////////////////////////////////////////////
+// function growingPlant(upSpeed, downSpeed, desiredHeight) {
+//     let count = 0;
+//     for (let i = upSpeed; i < desiredHeight; i = i + upSpeed) {
+//         i = i - downSpeed
+//         count++
+//     }
+//     console.log(count)
+//     return count
+// }
+// growingPlant(100, 55, 101)
 
 
 
