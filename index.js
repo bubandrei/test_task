@@ -1,5 +1,35 @@
 
 
+
+
+////////////////////////////////////////////////////////////////////////////
+// function billboard(name, price = 30) {
+//  return name.split('').reduce((accum, prev)=>{return accum + price},0)
+//   }
+// console.log(billboard('Andrei Bubeleu'))
+
+////////////////////////////////////////////////////////////////////////////
+// let arr = [
+//   [7, true],
+//   [5, false]
+// ];
+
+// function countLoopIterations(arr){
+//   const res = [];
+//   let prod = 1;
+//   for (const [n, b] of arr) {
+//     console.log(n)
+//     console.log(b)
+//     const q = n + 1 + b;
+//     console.log(q)
+//     res.push(prod*q);
+//     prod *= q-1;
+//   }
+//   return res;
+// }
+// countLoopIterations(arr)
+// console.log(countLoopIterations(arr))
+
 ////////////////////////////////////////////////////////////////////////////
 // var isSquare = function (n) {
 //   let num = Math.sqrt(n)
