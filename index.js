@@ -1,3 +1,19 @@
+
+function disemvowel(str) {
+    let arr = str.split('');
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i].toLowerCase();
+        if (char == 'e' || char == 'i' || char == 'a' || char == 'u' || char == 'o') {
+            arr[i] = ''
+        }
+    }
+    return arr.join('').toString()
+}
+console.log(disemvowel('This website is for losers LOL!'))
+// disemvowel('This website is for losers LOL!')
+
+
+
 ////////////////////////////////////////////////////////////////////////////
 // function unusualFive(a) {
 //   return a.length
