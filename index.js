@@ -1,16 +1,35 @@
-function squareArea(a) {
-    let r = ((a*4) / (2 * Math.PI));
+////////////////////////////////////////////////////////////////////////////
+// function century(year) {
+//     return Math.ceil(year/100)
+// }
+// console.log(century(160001200))
 
+////////////////////////////////////////////////////////////////////////////
+// function century(year) {
+//     let arr = year.toString().split('');
+//     let result = null;
+//     if (arr.length == 2) {
+//         result = 1
+//     }
+//     if (arr.length > 2) {
+//         if (arr[arr.length - 2] != 0 || arr[arr.length - 1] != 0) {
+//             result = +(arr.slice(0, -2).join('')) + 1;
+//         } else {
+//             result = +(arr.slice(0, -2).join(''))
+//         }
+//     }
+//     return result
+// }
+// console.log(century(160001210))
 
-    return Math.pow(r, 2).toFixed(2)
-}
-// squareArea(20)
-console.log(squareArea(2))
+////////////////////////////////////////////////////////////////////////////
+// function squareArea(a) {
+//     let r = ((a*4) / (2 * Math.PI));
+//     return Math.pow(r, 2).toFixed(2)
+// }
+// console.log(squareArea(2))
 
-
-
-
-
+////////////////////////////////////////////////////////////////////////////
 // const sequenceSum = (begin, end, step) => {
 //         let sum = 0;
 //        for(let i = begin; i<=end; i+=step){
@@ -20,9 +39,7 @@ console.log(squareArea(2))
 //    };
 // sequenceSum(2, 6, 2)
 
-
-
-
+////////////////////////////////////////////////////////////////////////////
 // function sumTwoSmallestNumbers(numbers) {
 //     let result = numbers.sort((a, b) => a - b);
 //     return result[0]+result[1]
