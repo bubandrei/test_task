@@ -1,4 +1,16 @@
 ////////////////////////////////////////////////////////////////////////////
+// var countSheep = function (num){
+//   let string = '';
+//   if(num){
+//     for(let i =1; i<=num; i++){
+//       string += i + ' '+'sheep...'
+//     }
+//   }
+//   return string
+// }
+// countSheep(3)
+
+////////////////////////////////////////////////////////////////////////////
 // function zeroAndOne(s) {
 //   let cnt = 0;
 //   for (let i=0; i<s.length; i++){
