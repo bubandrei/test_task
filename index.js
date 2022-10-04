@@ -1,3 +1,16 @@
+function growingPlant(upSpeed, downSpeed, desiredHeight) {
+    let count = 0;
+    for (let i = upSpeed; i < desiredHeight; i = i + upSpeed) {
+        i = i - downSpeed
+        count++
+    }
+    console.log(count)
+    return count
+}
+growingPlant(100, 55, 101)
+
+
+
 ////////////////////////////////////////////////////////////////////////////
 // function disemvowel(str) {
 //     let arr = str.split('');
