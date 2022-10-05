@@ -1,24 +1,28 @@
-function getGrade(s1, s2, s3) {
-    let score = Math.floor((s1 + s2 + s3) / 3);
-    let result = '';
-    if (90 <= score) {
-        return result = 'A';
-    }
-    if (80 <= score) {
-        return result = 'B';
-    }
-    if (70 <= score) {
-        return result = 'C';
-    }
-    if (60 <= score) {
-        return result = 'D';
-    }
-    if (0 <= score) {
-        return result = 'F';
-    }
-    return result
-}
-getGrade(60, 60, 92)
+
+const invert = array => array.map(num => -num);
+
+////////////////////////////////////////////////////////////////////////////
+// function getGrade(s1, s2, s3) {
+//     let score = Math.floor((s1 + s2 + s3) / 3);
+//     let result = '';
+//     if (90 <= score) {
+//         return result = 'A';
+//     }
+//     if (80 <= score) {
+//         return result = 'B';
+//     }
+//     if (70 <= score) {
+//         return result = 'C';
+//     }
+//     if (60 <= score) {
+//         return result = 'D';
+//     }
+//     if (0 <= score) {
+//         return result = 'F';
+//     }
+//     return result
+// }
+// getGrade(60, 60, 92)
 ////////////////////////////////////////////////////////////////////////////
 // function growingPlant(upSpeed, downSpeed, desiredHeight) {
 //     let count = 0;
