@@ -1,8 +1,36 @@
-function digitize(n) {
-// return n.toString().split('').map((el)=> +el).reverse()
-return Array.from(String(n), Number).reverse();
-   }
-   console.log(digitize(23654))
+////////////////////////////////////////////////////////////////////////////
+// function wordsToMarks(str){
+//     const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+//     return [...str].reduce((sum,letter)=> (sum += (alphabet.indexOf(letter) + 1),sum),0)
+//   }
+
+////////////////////////////////////////////////////////////////////////////
+// function sum(a) {
+//     const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+//     let summary = [];
+//     if (a) {
+//         const word = a.toLowerCase().split('');
+//         for (let i = 0; i < alphabet.length; i++) {
+//             for (let j = 0; j <= word.length; j++) {
+//                 if (alphabet[i] == word[j]) {
+//                     summary.push(i + 1)
+//                 }
+//             }
+//         }
+//         let result = summary.reduce((acum, prev) => {
+//             return acum + prev
+//         }, 0);
+//         return result
+//     }
+// }
+// sum('friendship')
+
+////////////////////////////////////////////////////////////////////////////
+// function digitize(n) {
+// // return n.toString().split('').map((el)=> +el).reverse()
+// return Array.from(String(n), Number).reverse();
+//    }
+//    console.log(digitize(23654))
 
 ////////////////////////////////////////////////////////////////////////////
 // function removeEveryOther(arr){
