@@ -1,5 +1,13 @@
 
-const invert = array => array.map(num => -num);
+////////////////////////////////////////////////////////////////////////////
+// function removeEveryOther(arr){
+//   return arr.filter((item, index)=>{return index%2 == 0 })
+// }
+// console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]))
+// removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"])
+
+////////////////////////////////////////////////////////////////////////////
+// const invert = array => array.map(num => -num);
 
 ////////////////////////////////////////////////////////////////////////////
 // function getGrade(s1, s2, s3) {
