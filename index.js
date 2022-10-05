@@ -1,3 +1,8 @@
+function digitize(n) {
+// return n.toString().split('').map((el)=> +el).reverse()
+return Array.from(String(n), Number).reverse();
+   }
+   console.log(digitize(23654))
 
 ////////////////////////////////////////////////////////////////////////////
 // function removeEveryOther(arr){
