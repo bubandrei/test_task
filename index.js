@@ -1,3 +1,24 @@
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// function basicOp(operation, value1, value2) {
+//     let result = null;
+
+//     operation === '+' ? result = +value1 + +value2 : result;
+//     operation === '-' ? result = +value1 - +value2 : result;
+//     operation === '*' ? result = +value1 * +value2 : result;
+//     operation === '/' ? result = +value1 / +value2 : result;
+
+//     return result
+
+// }
+
+// console.log(basicOp('+', 2, 2))
+
+
+
 ////////////////////////////////////////////////////////////////////////////
 // function wordsToMarks(str){
 //     const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
