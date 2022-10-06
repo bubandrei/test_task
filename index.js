@@ -1,7 +1,10 @@
-
-
-
-
+////////////////////////////////////////////////////////////////////////////
+// var number = function (array) {
+//     return array.map((el, index) => {
+//         return `${index+1}: ${el}`
+//     })
+// }
+// console.log(number(["a", "b", "c"]))
 ////////////////////////////////////////////////////////////////////////////
 // function basicOp(operation, value1, value2) {
 //     let result = null;
