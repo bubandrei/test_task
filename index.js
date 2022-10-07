@@ -1,3 +1,9 @@
+function findNeedle(haystack) {
+   return haystack.indexOf("needle")
+  }
+  console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
+
+
 ////////////////////////////////////////////////////////////////////////////
 // var number = function (array) {
 //     return array.map((el, index) => {
