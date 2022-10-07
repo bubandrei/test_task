@@ -1,7 +1,23 @@
-function findNeedle(haystack) {
-   return haystack.indexOf("needle")
-  }
-  console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
+////////////////////////////////////////////////////////////////////////////
+// function minSum(arr) {
+//     let newArr = arr.sort((a, b) => a - b)
+//     let result = 0;
+//     let arrLen = newArr.length;
+//     for (let i = 0; i < newArr.length / 2; i++) {
+//         arrLen = arrLen - 1;
+//         result += newArr[i] * newArr[arrLen]
+//     }
+//     console.log(result)
+// }
+
+// minSum([5,4,2,3])
+
+
+////////////////////////////////////////////////////////////////////////////
+// function findNeedle(haystack) {
+//    return haystack.indexOf("needle")
+//   }
+//   console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
 
 
 ////////////////////////////////////////////////////////////////////////////
