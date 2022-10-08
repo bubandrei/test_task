@@ -1,6 +1,11 @@
 const arr = [1,2,3,4,5,4,3,2,3];
 let newArr = new Set(arr);
-console.log(newArr)
+let thirdArr = [...newArr]
+let secArr = [];
+newArr.forEach((el)=>{
+    return secArr.push(el)
+})
+console.log(thirdArr)
 
 
 ////////////////////////////////////////////////////////////////////////////
