@@ -1,3 +1,22 @@
+const users = [
+    {
+        name: 'John',
+        age: 20
+    },
+    {
+        name: 'Sara',
+        age: 15
+    },
+    {
+        name: 'Mike',
+        age: 30
+    },
+]
+let newArr = users.sort((u1, u2) => u1.age - u2.age)
+console.log(newArr)
+
+
+
 
 ////////////////////////////////////////////////////////////////////////////
 // let x = Math.ceil(Math.random() * (6 - 1) + 1)
