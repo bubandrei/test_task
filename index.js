@@ -1,18 +1,21 @@
 function capitalizeFirstLetter(str){
-let arr = str.split(' ');
-let newArr = arr.map((item)=>{
-    return item[0].toUpperCase() + item.substr(1)
-})
-return newArr.join(' ')
-}
-console.log(capitalizeFirstLetter('hello my friend'))
-
-
-
+return str.charAt(0).toUpperCase() + str.substr(1)
+    }
+    console.log(capitalizeFirstLetter('hello'))
+    
 
 
 ////////////////////////////////////////////////////////////////////////////
+// function capitalizeFirstLetter(str){
+// let arr = str.split(' ');
+// let newArr = arr.map((item)=>{
+//     return item[0].toUpperCase() + item.substr(1)
+// })
+// return newArr.join(' ')
+// }
+// console.log(capitalizeFirstLetter('hello my friend'))
 
+////////////////////////////////////////////////////////////////////////////
 // class Bike {
 //     constructor(model, color) {
 //         this.model = model,
