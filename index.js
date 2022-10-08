@@ -1,9 +1,63 @@
-function capitalizeFirstLetter(str){
-return str.charAt(0).toUpperCase() + str.substr(1)
-    }
-    console.log(capitalizeFirstLetter('hello'))
-    
+// const marks = [50, 20, 70, 60, 45, 30];
+// function findMin(arr){
+// // return Math.min.apply(null, arr)
+// return Math.min(...arr)
+// }
 
+// function findMax(arr){
+//     // return Math.max.apply(null, arr)
+//     return Math.max(...arr)
+// }
+// console.log(findMin(marks))
+// console.log(findMax(marks))
+
+const marks = [50, 20, 70, 60, 45, 30, 80, 10];
+function findMin(arr) {
+    if (arr.length === 0) {
+        return 'no marks'
+    }
+    let min = arr[0];
+    arr.forEach(element => {
+        if (min > element) {
+            min = element
+        }
+    });
+    return min
+
+}
+
+function findMax(arr) {
+    if (arr.length === 0) {
+        return 'no marks'
+    }
+    let max = arr[0];
+    arr.forEach(element => {
+        if (max < element) {
+            max = element
+        }
+    });
+    return max
+
+}
+console.log(findMin(marks))
+console.log(findMax(marks))
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// function capitalizeFirstLetter(str) {
+//     return str.charAt(0).toUpperCase() + str.substr(1)
+// }
+// console.log(capitalizeFirstLetter('hello'))
 
 ////////////////////////////////////////////////////////////////////////////
 // function capitalizeFirstLetter(str){
