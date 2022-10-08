@@ -1,3 +1,21 @@
+// let num = 12344338657567;
+
+// function findLucky(num) {
+//     num = [...String(num)];
+//     let res = {};
+//     for (let i = 0; i < num.length; i++) {
+//         if (res[num[i]]) {
+//             console.log(res[num[i]])
+//             res[num[i]]++
+//         } else {
+//             res[num[i]] = 1
+//         }
+//     }
+//     return res
+// }
+// console.log(findLucky(num))
+
+
 ////////////////////////////////////////////////////////////////////////////
 // let num = 1234433899999999;
 // let newArr = num.toString().split('');
