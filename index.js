@@ -1,22 +1,49 @@
-const users = [
-    {
-        name: 'John',
-        age: 20
-    },
-    {
-        name: 'Sara',
-        age: 15
-    },
-    {
-        name: 'Mike',
-        age: 30
-    },
-]
-let newArr = users.sort((u1, u2) => u1.age - u2.age)
-console.log(newArr)
+////////////////////////////////////////////////////////////////////////////
+// let num = 1234433899999999;
+// let newArr = num.toString().split('');
+// let sum = 0;
+// let resultArr = [];
+// for (let i = 0; i < newArr.length; i++) {
+//     for (let j = 0; j < newArr.length; j++) {
+//         if (newArr[i] === newArr[j]) {
+//             sum += 1
+//         }
+//     }
+//     if (newArr[i] == sum) {
+//         resultArr.push(sum)
+
+//     }
+//     sum = 0;
+// }
+// let luckyNum = Math.max.apply(null, resultArr)
+// console.log(luckyNum)
+////////////////////////////////////////////////////////////////////////////
+// const arr = [1,2,3,5,6,7,8];
+// let reversed = [];
+
+// for(let i = arr.length-1; i>=0; i--){
+//     reversed.push(arr[i]);
+// }
+// console.log(reversed)
 
 
-
+////////////////////////////////////////////////////////////////////////////
+// const users = [
+//     {
+//         name: 'John',
+//         age: 20
+//     },
+//     {
+//         name: 'Sara',
+//         age: 15
+//     },
+//     {
+//         name: 'Mike',
+//         age: 30
+//     },
+// ]
+// let newArr = users.sort((u1, u2) => u1.age - u2.age)
+// console.log(newArr)
 
 ////////////////////////////////////////////////////////////////////////////
 // let x = Math.ceil(Math.random() * (6 - 1) + 1)
