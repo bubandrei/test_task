@@ -1,46 +1,45 @@
-
-const inData = 'user.name.firstname=Bob&user.name.lastname=Smith&user.favoritecolor=Light%20Blue&experiments.theme=dark';
-
-function queryObjectify(str) {
-    let res = {};
-
-    str = str.split('&');
-    str = str.map((item) => item.split('.'));
-    for (let i = 0; i < str.length; i++) {
-        let cur = res;
-        for (let j = 0; j < str[i].length; j++) {
-            let name = str[i][j];
-            if (j == str[i].length - 1) {
-                name = name.split('=');
-                cur[name[0]] = decodeURIComponent(name[1]);
-                break
-            }
-            if (cur[name]) {
-                cur = cur[name]
-            } else {
-                cur[name] = {};
-                cur = cur[name]
-            }
-        }
-
+class Bike {
+    constructor(model, color) {
+        this.model = model,
+        this.color = color
     }
-    return res
+    getDeails() {
+        return this.model + ' bike has ' + this.color + ' color'
+    }
 }
+let bike = new Bike('GT', 'black')
+console.log(bike.getDeails())
 
-console.log(queryObjectify(inData))
+////////////////////////////////////////////////////////////////////////////
+// const inData = 'user.name.firstname=Bob&user.name.lastname=Smith&user.favoritecolor=Light%20Blue&experiments.theme=dark';
 
+// function queryObjectify(str) {
+//     let res = {};
 
+//     str = str.split('&');
+//     str = str.map((item) => item.split('.'));
+//     for (let i = 0; i < str.length; i++) {
+//         let cur = res;
+//         for (let j = 0; j < str[i].length; j++) {
+//             let name = str[i][j];
+//             if (j == str[i].length - 1) {
+//                 name = name.split('=');
+//                 cur[name[0]] = decodeURIComponent(name[1]);
+//                 break
+//             }
+//             if (cur[name]) {
+//                 cur = cur[name]
+//             } else {
+//                 cur[name] = {};
+//                 cur = cur[name]
+//             }
+//         }
 
+//     }
+//     return res
+// }
 
-
-
-
-
-
-
-
-
-
+// console.log(queryObjectify(inData))
 
 ////////////////////////////////////////////////////////////////////////////
 // let num = 12344338657567;
