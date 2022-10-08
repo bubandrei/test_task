@@ -1,14 +1,29 @@
-class Bike {
-    constructor(model, color) {
-        this.model = model,
-        this.color = color
-    }
-    getDeails() {
-        return this.model + ' bike has ' + this.color + ' color'
-    }
+function capitalizeFirstLetter(str){
+let arr = str.split(' ');
+let newArr = arr.map((item)=>{
+    return item[0].toUpperCase() + item.substr(1)
+})
+return newArr.join(' ')
 }
-let bike = new Bike('GT', 'black')
-console.log(bike.getDeails())
+console.log(capitalizeFirstLetter('hello my friend'))
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+
+// class Bike {
+//     constructor(model, color) {
+//         this.model = model,
+//         this.color = color
+//     }
+//     getDeails() {
+//         return this.model + ' bike has ' + this.color + ' color'
+//     }
+// }
+// let bike = new Bike('GT', 'black')
+// console.log(bike.getDeails())
 
 ////////////////////////////////////////////////////////////////////////////
 // const inData = 'user.name.firstname=Bob&user.name.lastname=Smith&user.favoritecolor=Light%20Blue&experiments.theme=dark';
