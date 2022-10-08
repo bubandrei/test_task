@@ -1,3 +1,9 @@
+const arr = [1,2,3,4,5,4,3,2,3];
+let newArr = new Set(arr);
+console.log(newArr)
+
+
+////////////////////////////////////////////////////////////////////////////
 // const marks = [50, 20, 70, 60, 45, 30];
 // function findMin(arr){
 // // return Math.min.apply(null, arr)
@@ -11,46 +17,37 @@
 // console.log(findMin(marks))
 // console.log(findMax(marks))
 
-const marks = [50, 20, 70, 60, 45, 30, 80, 10];
-function findMin(arr) {
-    if (arr.length === 0) {
-        return 'no marks'
-    }
-    let min = arr[0];
-    arr.forEach(element => {
-        if (min > element) {
-            min = element
-        }
-    });
-    return min
+// const marks = [50, 20, 70, 60, 45, 30, 80, 10];
+// function findMin(arr) {
+//     if (arr.length === 0) {
+//         return 'no marks'
+//     }
+//     let min = arr[0];
+//     arr.forEach(element => {
+//         if (min > element) {
+//             min = element
+//         }
+//     });
+//     return min
 
-}
+// }
 
-function findMax(arr) {
-    if (arr.length === 0) {
-        return 'no marks'
-    }
-    let max = arr[0];
-    arr.forEach(element => {
-        if (max < element) {
-            max = element
-        }
-    });
-    return max
+////////////////////////////////////////////////////////////////////////////
+// function findMax(arr) {
+//     if (arr.length === 0) {
+//         return 'no marks'
+//     }
+//     let max = arr[0];
+//     arr.forEach(element => {
+//         if (max < element) {
+//             max = element
+//         }
+//     });
+//     return max
 
-}
-console.log(findMin(marks))
-console.log(findMax(marks))
-
-
-
-
-
-
-
-
-
-
+// }
+// console.log(findMin(marks))
+// console.log(findMax(marks))
 
 
 ////////////////////////////////////////////////////////////////////////////
