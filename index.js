@@ -1,11 +1,36 @@
-const arr = [1,2,3,4,5,4,3,2,3];
-let newArr = new Set(arr);
-let thirdArr = [...newArr]
-let secArr = [];
-newArr.forEach((el)=>{
-    return secArr.push(el)
-})
-console.log(thirdArr)
+// let obj = {a:1, b:2, c:3};
+// let linkObj = obj;
+// let newObj = Object.assign(obj);
+// let new2Obj = {...obj};
+
+// console.log(newObj)
+// console.log(new2Obj)
+// console.log(obj == new2Obj);
+// console.log(newObj == new2Obj);
+// console.log(obj == linkObj)
+
+////////////////////////////////////////////////////////////////////////////
+// function Person(){
+//     return 'aaa'
+// }
+
+// let person2 = Person();//'aaa'
+// let person1 = new Person();//Person{}
+
+// console.log(person1)
+// console.log(person2)
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// const arr = [1,2,3,4,5,4,3,2,3];
+// let newArr = new Set(arr);
+// let thirdArr = [...newArr]
+// let secArr = [];
+// newArr.forEach((el)=>{
+//     return secArr.push(el)
+// })
+// console.log(thirdArr)
 
 
 ////////////////////////////////////////////////////////////////////////////
