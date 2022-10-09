@@ -1,12 +1,14 @@
-let str = 'google.com';
-function text(str){
-let arr = str.split('.')
-return arr[arr.length-1].toString()
-// console.log(arr)
-}
-console.log(text(str))
 
 
+
+////////////////////////////////////////////////////////////////////////////
+// let str = 'google.com';
+// function text(str){
+// let arr = str.split('.')
+// return arr[arr.length-1].toString()
+// // console.log(arr)
+// }
+// console.log(text(str))
 
 ////////////////////////////////////////////////////////////////////////////
 // function add(a, b) {
