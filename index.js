@@ -1,3 +1,23 @@
+function add(a, b) {
+    if (b != undefined) {
+        return a + b
+    }
+    return (c) => a + c
+}
+console.log(add(2, 5))
+console.log(add(3)(5))
+
+// function add(a){
+//     return function(b){
+//         return a+b
+//     }
+// }
+// console.log(add(2)(5))
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
 // let obj = {a:1, b:2, c:3};
 // let linkObj = obj;
 // let newObj = Object.assign(obj);
