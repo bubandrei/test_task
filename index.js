@@ -1,4 +1,10 @@
-
+let arr =[1,2,3,4,5];
+let result = arr.filter((el)=>{
+    return console.log(el%2)
+})
+let newArr = [...arr,...arr];
+console.log(newArr)
+console.log(result)
 
 
 ////////////////////////////////////////////////////////////////////////////
