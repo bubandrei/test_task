@@ -1,11 +1,22 @@
-function add(a, b) {
-    if (b != undefined) {
-        return a + b
-    }
-    return (c) => a + c
+let str = 'google.com';
+function text(str){
+let arr = str.split('.')
+return arr[arr.length-1].toString()
+// console.log(arr)
 }
-console.log(add(2, 5))
-console.log(add(3)(5))
+console.log(text(str))
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// function add(a, b) {
+//     if (b != undefined) {
+//         return a + b
+//     }
+//     return (c) => a + c
+// }
+// console.log(add(2, 5))
+// console.log(add(3)(5))
 
 // function add(a){
 //     return function(b){
