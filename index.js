@@ -1,3 +1,16 @@
+// function arraySum(arr) {
+//     let newArr = arr.flat().flat();
+//     return newArr.reduce((sum, prev) => sum + prev, 0)
+
+//     console.log(newArr)
+// }
+// console.log(arraySum([[1, 2, [3, 4]], [9], [10, 12]]))
+// arraySum([
+//     [1, 2, [3, 4]],
+//     [9],
+//     [10, 12]
+// ])
+
 ////////////////////////////////////////////////////////////////////////////
 // const url =(number)=>{
 //     return new Promise((resolve, reject)=>{
