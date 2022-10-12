@@ -1,3 +1,29 @@
+// const str = 'asdfhg';
+// const str2 = 'hgfdsa';
+
+// function equals(str, str2) {
+//     let x = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         for (let j = 0; j < str2.length; j++) {
+//             if (str[i] === str[j]) {
+//                 x += 1
+//             }
+//         }
+//     }
+//     console.log(str.length)
+//     if (str.length === x) {
+//         return true
+//     } else {
+//         return false
+//     }
+
+// }
+// console.log(equals(str, str2))
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
 // function arraySum(arr) {
 //     let newArr = arr.flat().flat();
 //     return newArr.reduce((sum, prev) => sum + prev, 0)
