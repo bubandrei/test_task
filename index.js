@@ -1,13 +1,55 @@
-var f = function () {
-    console.log(1);
-}
-var execute = function (f) {
-    setTimeout(f, 1000);
-}
-execute(f);
-f = function () {
-    console.log(2);
-}
+////////////////////////////////////////////////////////////////////////////
+// const obj = {
+//     a:this,
+//     b:function(){
+//         return this;
+//     },
+//     c:()=>{
+//         return this;
+//     },
+//     d(){
+//         return this;
+//     },
+//     e:function(){
+//         return this.a
+//     }
+// }
+////////////////////////////////////////////////////////////////////////////
+// console.log(1);
+// setTimeout(()=>console.log(2),0);
+// Promise.resolve().then(()=>console.log(3));
+// setTimeout(()=>console.log(4),1);
+// console.log(5)
+////////////////////////////////////////////////////////////////////////////
+// const obj = {
+//     a: 1,
+//     b: 'hello',
+//     c: {
+//         d: 'world'
+//     },
+//     e: {
+//         f: {
+//             g: 100
+//         }
+//     }
+// }
+
+// const newObj = JSON.stringify(obj);
+// const obj2 = JSON.parse(newObj)
+// const obj3 = JSON.parse(JSON.stringify(obj))
+// console.log(obj3)
+
+////////////////////////////////////////////////////////////////////////////
+// var f = function () {
+//     console.log(1);
+// }
+// var execute = function (f) {
+//     setTimeout(f, 1000);
+// }
+// execute(f);
+// f = function () {
+//     console.log(2);
+// }
 
 
 
