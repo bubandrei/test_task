@@ -9,12 +9,15 @@
 // a[c] = 456;
 // console.log(a[b])
 
-const obj = {
-    '0':5,
-    0:3
-}
-console.log(obj['0']+obj[0])
+// const obj = {
+//     '0':5,
+//     0:3
+// }
+// console.log(obj['0']+obj[0])
 
+// let x = y=5
+// console.log(x)
+// console.log(y)
 
 
 ////////////////////////////////////////////////////////////////////////////
