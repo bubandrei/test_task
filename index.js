@@ -1,15 +1,27 @@
-const classPoints = [40, 40, 34, 57, 29, 72, 57, 88];
-const yourPoints = 75;
-function betterThanAverage(classPoints, yourPoints) {
-    let sumPoint = classPoints.reduce((accum, prev) => accum + prev, 0)
-    let averagePoint = sumPoint / classPoints.length;
-    if (averagePoint < yourPoints) {
-        return true
-    } else {
-        return false
-    }
-}
-console.log(betterThanAverage(classPoints, yourPoints))
+// const arr = [1,2,3,4,5]
+// const newArr = arr.reduce((x,y)=> console.log(x,y))
+// console.log(newArr)
+
+const a = {};
+const b = {key:'111'};
+const c ={key:'222'};
+a[b] = 123;
+a[c] = 456;
+console.log(a[b])
+
+////////////////////////////////////////////////////////////////////////////
+// const classPoints = [40, 40, 34, 57, 29, 72, 57, 88];
+// const yourPoints = 75;
+// function betterThanAverage(classPoints, yourPoints) {
+//     let sumPoint = classPoints.reduce((accum, prev) => accum + prev, 0)
+//     let averagePoint = sumPoint / classPoints.length;
+//     if (averagePoint < yourPoints) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(betterThanAverage(classPoints, yourPoints))
 
 
 ////////////////////////////////////////////////////////////////////////////
