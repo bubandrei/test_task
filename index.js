@@ -1,3 +1,17 @@
+const classPoints = [40, 40, 34, 57, 29, 72, 57, 88];
+const yourPoints = 75;
+function betterThanAverage(classPoints, yourPoints) {
+    let sumPoint = classPoints.reduce((accum, prev) => accum + prev, 0)
+    let averagePoint = sumPoint / classPoints.length;
+    if (averagePoint < yourPoints) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(betterThanAverage(classPoints, yourPoints))
+
+
 ////////////////////////////////////////////////////////////////////////////
 // function powersOfTwo(n){
 //     var result = [];
