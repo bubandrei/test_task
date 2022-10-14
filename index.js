@@ -2,12 +2,20 @@
 // const newArr = arr.reduce((x,y)=> console.log(x,y))
 // console.log(newArr)
 
-const a = {};
-const b = {key:'111'};
-const c ={key:'222'};
-a[b] = 123;
-a[c] = 456;
-console.log(a[b])
+// const a = {};
+// const b = {key:'111'};
+// const c ={key:'222'};
+// a[b] = 123;
+// a[c] = 456;
+// console.log(a[b])
+
+const obj = {
+    '0':5,
+    0:3
+}
+console.log(obj['0']+obj[0])
+
+
 
 ////////////////////////////////////////////////////////////////////////////
 // const classPoints = [40, 40, 34, 57, 29, 72, 57, 88];
