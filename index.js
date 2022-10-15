@@ -23,31 +23,64 @@
 // test()
 //////////////////////////////////////////////////////////////////////////
 
-var obj = {
-    fullname: 'Coling',
-    prop:{
-        fullname: 'Aurelio',
-        getFullname:function(){
-            return this.fullname;
-        }
-    }
-}
-var test = obj.prop.getFullname;
-console.log(test())
-console.log(test.call(obj.prop))
+// var obj = {
+//     fullname: 'Coling',
+//     prop:{
+//         fullname: 'Aurelio',
+//         getFullname:function(){
+//             return this.fullname;
+//         }
+//     }
+// }
+// var test = obj.prop.getFullname;
+// console.log(test())
+// console.log(test.call(obj.prop))
+//////////////////////////////////////////////////////////////////////////
+// (function () {
+//     b=3;
+//     var a = b;
+// })();
 
+// console.log("a defined? " + (typeof a !== 'undefined'));//referenceError
+// console.log("b defined? " + (typeof b !== 'undefined'));//number
+// console.log(b)
+//////////////////////////////////////////////////////////////////////////
+// var myObject = {
+//     foo: "bar",
+//     func: function() {
+//         var self = this;
+//         console.log("outer func:  this.foo = " + this.foo);//bar
+//         console.log("outer func:  self.foo = " + self.foo);//bar
+//         (function() {
+//             console.log("inner func:  this.foo = " + this.foo);//undefind
+//             console.log("inner func:  self.foo = " + self.foo);//bar
+//         }());
+//     }
+// };
+// myObject.func();
+//////////////////////////////////////////////////////////////////////////
+// (function() {
+//     console.log(1); 
+//     setTimeout(function(){console.log(2)}, 1000); 
+//     setTimeout(function(){console.log(3)}, 0); 
+//     console.log(4);
+// })();
+//////////////////////////////////////////////////////////////////////////
+// function product(a){
+//     return function(b){
+//         return [
+//             function (c){
+//                 return a*b+c
+//             }
+//         ]
+//     }
+// }
+// console.log(product(10)(10)[0](5))
+//////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////
 
 
 
