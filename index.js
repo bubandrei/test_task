@@ -1,32 +1,53 @@
-var globalVar = "xyz";
-(function outerFunc(outerArg) {
-    var outerVar = 'a';
-    
-    (function innerFunc(innerArg) {
-    var innerVar = 'b';
-    
-    console.log(
-        "outerArg = " + outerArg + "\n" +//123
-        "innerArg = " + innerArg + "\n" +//456
-        "outerVar = " + outerVar + "\n" +//a
-        "innerVar = " + innerVar + "\n" +//b
-        "globalVar = " + globalVar);//xyz
-    
-    })(456);
-})(123);
+// var globalVar = "xyz";
+// (function outerFunc(outerArg) {
+//     var outerVar = 'a';
 
+//     (function innerFunc(innerArg) {
+//     var innerVar = 'b';
 
+//     console.log(
+//         "outerArg = " + outerArg + "\n" +//123
+//         "innerArg = " + innerArg + "\n" +//456
+//         "outerVar = " + outerVar + "\n" +//a
+//         "innerVar = " + innerVar + "\n" +//b
+//         "globalVar = " + globalVar);//xyz
 
-
-
-
-
-
-
-
-
-
-
+//     })(456);
+// })(123);
+//////////////////////////////////////////////////////////////////////////
+// console.log("0 || 1 = "+(0 || 1));//1
+// console.log("1 || 2 = "+(1 || 2));//1
+// console.log("0 && 1 = "+(0 && 1));//0
+// console.log("1 && 2 = "+(1 && 2));//2
+//////////////////////////////////////////////////////////////////////////
+// console.log(false == '0')//true
+// console.log(false === '0')//false
+//////////////////////////////////////////////////////////////////////////
+// var a={},
+//     b={key:'b'},
+//     c={key:'c'};//
+// a[b]=123;//a["[object Object]"]
+// a[c]=456;//a["[object Object]"]
+// console.log(a[b]);//456
+//////////////////////////////////////////////////////////////////////////
+// console.log((function f(n) { return ((n > 1) ? n * f(n - 1) : n) })(10));
+//////////////////////////////////////////////////////////////////////////
+// (function(x) {
+//     return (function(y) {
+//         console.log(x);
+//     })(2)
+// })(1);
+//////////////////////////////////////////////////////////////////////////
+// var hero = {
+//     _name: 'John Doe',
+//     getSecretIdentity: function (){
+//         return this._name;
+//     }
+// };
+// var stoleSecretIdentity = hero.getSecretIdentity;
+// console.log(stoleSecretIdentity());//undefind
+// console.log(hero.getSecretIdentity());//'John Doe'
+//////////////////////////////////////////////////////////////////////////
 
 
 
