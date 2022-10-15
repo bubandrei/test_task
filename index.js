@@ -77,25 +77,35 @@
 // }
 // console.log(product(10)(10)[0](5))
 //////////////////////////////////////////////////////////////////////////
-const str = 'level';
-function polidrom(str) {
-    let newStr = str.toLowerCase();
-    let len = newStr.length;
-    if (len !== '') {
-        for (let i = 0; i <= newStr.length/2; i++) {
-            if (newStr[i] != newStr[len-1]) {
-                console.log(str[i])
-                return false
-            } else {
-                len--
-            }
+// const str = 'level';
+// function polidrom(str) {
+//     let newStr = str.toLowerCase();
+//     let len = newStr.length;
+//     if (len !== '') {
+//         for (let i = 0; i <= newStr.length/2; i++) {
+//             if (newStr[i] != newStr[len-1]) {
+//                 console.log(str[i])
+//                 return false
+//             } else {
+//                 len--
+//             }
+//         }
+//         return true
+//     }
+// }
+// console.log(polidrom(str))
+//////////////////////////////////////////////////////////////////////////
+function sum(x) {
+    if (arguments.length == 2) {
+        return arguments[0] + arguments[1]
+    } else {
+        return function (y) {
+            return x + y
         }
-        return true
     }
 }
-console.log(polidrom(str))
-//////////////////////////////////////////////////////////////////////////
-
+console.log(sum(2, 3));   // Outputs 5
+console.log(sum(2)(3));
 //////////////////////////////////////////////////////////////////////////
 
 
