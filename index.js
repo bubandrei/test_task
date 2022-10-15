@@ -77,7 +77,23 @@
 // }
 // console.log(product(10)(10)[0](5))
 //////////////////////////////////////////////////////////////////////////
-
+const str = 'level';
+function polidrom(str) {
+    let newStr = str.toLowerCase();
+    let len = newStr.length;
+    if (len !== '') {
+        for (let i = 0; i <= newStr.length/2; i++) {
+            if (newStr[i] != newStr[len-1]) {
+                console.log(str[i])
+                return false
+            } else {
+                len--
+            }
+        }
+        return true
+    }
+}
+console.log(polidrom(str))
 //////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////
