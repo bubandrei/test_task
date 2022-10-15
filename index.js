@@ -48,23 +48,37 @@
 // console.log(stoleSecretIdentity());//undefind
 // console.log(hero.getSecretIdentity());//'John Doe'
 //////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var length = 10;
+// function fn() {
+// 	console.log(this.length);//10
+// }
+// var obj = {
+//   length: 5,
+//   method: function(fn) {
+//     fn();
+//     arguments[0]();//2
+//   }
+// };
+// obj.method(fn, 1);
+//////////////////////////////////////////////////////////////////////////
+// (function () {
+//     try {
+//         throw new Error();
+//     } catch (x) {
+//         var x = 1, y = 2;
+//         console.log(x);//1
+//     }
+//     console.log(x);//undefined
+//     console.log(y);//2
+// })();
+//////////////////////////////////////////////////////////////////////////
+// var x = 21;
+// var girl = function () {
+//     console.log(x);//undefind
+//     var x = 20;
+// };
+// girl ();
+//////////////////////////////////////////////////////////////////////////
 // const str = 'hello';
 // function rep(str){
 //     return str.repeat(3)
