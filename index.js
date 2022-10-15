@@ -1,3 +1,21 @@
+(function () {
+    var a = b =5;
+})();
+console.log(b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const arr = [1,2,3,4,5]
 // const newArr = arr.reduce((x,y)=> console.log(x,y))
 // console.log(newArr)
