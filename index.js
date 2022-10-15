@@ -12,17 +12,29 @@
 //     return str
 // }
 //////////////////////////////////////////////////////////////////////////
-function test(){
-    console.log(a);
-    console.log(foo());
-    var a = 1;
-    function foo(){
-        return 2;
+// function test(){
+//     console.log(a);
+//     console.log(foo());
+//     var a = 1;
+//     function foo(){
+//         return 2;
+//     }
+// }
+// test()
+//////////////////////////////////////////////////////////////////////////
+
+var obj = {
+    fullname: 'Coling',
+    prop:{
+        fullname: 'Aurelio',
+        getFullname:function(){
+            return this.fullname;
+        }
     }
 }
-test()
-
-
+var test = obj.prop.getFullname;
+console.log(test())
+console.log(test.call(obj.prop))
 
 
 
