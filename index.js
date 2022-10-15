@@ -1,3 +1,45 @@
+// const str = 'hello';
+// function rep(str){
+//     return str.repeat(3)
+// }
+// console.log(rep(str))
+//////////////////////////////////////////////////////////////////////////
+String.prototype.repeatify = String.prototype.repeatify || function(times){
+    var str = '';
+    for(var i = 0; i<times; i++){
+        str +=this;
+    }
+    return str
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
 // (function () {
 //     var a = b = 5;
 // })();
@@ -21,17 +63,15 @@
 // }
 // console.log(greet({ name: 'amy' }))
 //////////////////////////////////////////////////////////////////////////
-let dog = {
-    name: 'doggo',
-    sayName: () => {
-        console.log(this.name)
-    }
-}
-let sayName = dog.sayName
-console.log(sayName())
-
-
-
+// let dog = {
+//     name: 'doggo',
+//     sayName: () => {
+//         console.log(this.name)
+//     }
+// }
+// let sayName = dog.sayName
+// console.log(sayName.call(dog.sayName))
+// console.log(sayName())
 
 //////////////////////////////////////////////////////////////////////////
 // const arr = [1,2,3,4,5]
