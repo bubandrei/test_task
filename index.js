@@ -1,38 +1,56 @@
-(function () {
-    var a = b =5;
-})();
-console.log(b)
+// (function () {
+//     var a = b = 5;
+// })();
+// console.log(b)
+//////////////////////////////////////////////////////////////////////////
+// console.log(variable)
+// console.log(typeof variable)
+//////////////////////////////////////////////////////////////////////////
+// function getCircumference(radius) {
+//     console.log(circumference)
+//     circumference = PI*radius*2;
+//     const PI = 22/7;
+//   }
+//   getCircumference(2)
+//////////////////////////////////////////////////////////////////////////
+// function greet(person) {
+//     if (person !== { name: 'amy' }) {
+//         return person
+//     }
+//     else { return 'hey arnold' }
+// }
+// console.log(greet({ name: 'amy' }))
+//////////////////////////////////////////////////////////////////////////
+let dog = {
+    name: 'doggo',
+    sayName: () => {
+        console.log(this.name)
+    }
+}
+let sayName = dog.sayName
+console.log(sayName())
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////
 // const arr = [1,2,3,4,5]
 // const newArr = arr.reduce((x,y)=> console.log(x,y))
 // console.log(newArr)
-
+//////////////////////////////////////////////////////////////////////////
 // const a = {};
 // const b = {key:'111'};
 // const c ={key:'222'};
 // a[b] = 123;
 // a[c] = 456;
 // console.log(a[b])
-
+//////////////////////////////////////////////////////////////////////////
 // const obj = {
 //     '0':5,
 //     0:3
 // }
 // console.log(obj['0']+obj[0])
-
+//////////////////////////////////////////////////////////////////////////
 // let x = y=5
 // console.log(x)
 // console.log(y)
