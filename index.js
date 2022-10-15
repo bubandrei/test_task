@@ -1,3 +1,49 @@
+var globalVar = "xyz";
+(function outerFunc(outerArg) {
+    var outerVar = 'a';
+    
+    (function innerFunc(innerArg) {
+    var innerVar = 'b';
+    
+    console.log(
+        "outerArg = " + outerArg + "\n" +//123
+        "innerArg = " + innerArg + "\n" +//456
+        "outerVar = " + outerVar + "\n" +//a
+        "innerVar = " + innerVar + "\n" +//b
+        "globalVar = " + globalVar);//xyz
+    
+    })(456);
+})(123);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const str = 'hello';
 // function rep(str){
 //     return str.repeat(3)
@@ -107,28 +153,39 @@
 // console.log(sum(2, 3));   // Outputs 5
 // console.log(sum(2)(3));
 //////////////////////////////////////////////////////////////////////////
-function sum(x, y) {
-    if (y !== undefined) {
-        return x + y
-    } else {
-        return function (y) {
-            return x + y
-        }
-    }
-}
-console.log(sum(2, 3));   // Outputs 5
-console.log(sum(2)(3));
-
-
-
-
-
-
-
-
-
-
-
+// function sum(x, y) {
+//     if (y !== undefined) {
+//         return x + y
+//     } else {
+//         return function (y) {
+//             return x + y
+//         }
+//     }
+// }
+// console.log(sum(2, 3));   // Outputs 5
+// console.log(sum(2)(3));
+//////////////////////////////////////////////////////////////////////////
+// var d = {};
+// [ 'zebra', 'horse' ].forEach(function(k) {
+// 	d[k] = undefined;
+// });
+// console.log(d)
+//////////////////////////////////////////////////////////////////////////
+// var arr1 = "john".split('');
+// var arr2 = arr1.reverse();
+// var arr3 = "jones".split('');
+// arr2.push(arr3);
+// console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+// console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+//array 1: length=5 last=j,o,n,e,s
+//array 2: length=5 last=j,o,n,e,s
+//////////////////////////////////////////////////////////////////////////
+// console.log(1 +  "2" + "2");//122
+// console.log(1 +  +"2" + "2");//32
+// console.log(1 +  -"1" + "2");//'02'
+// console.log(+"1" +  "1" + "2");//112
+// console.log( "A" - "B" + "2");//NaN2
+// console.log( "A" - "B" + 2);//NaN
 //////////////////////////////////////////////////////////////////////////
 // (function () {
 //     var a = b = 5;
