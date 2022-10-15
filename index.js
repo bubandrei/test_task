@@ -4,14 +4,23 @@
 // }
 // console.log(rep(str))
 //////////////////////////////////////////////////////////////////////////
-String.prototype.repeatify = String.prototype.repeatify || function(times){
-    var str = '';
-    for(var i = 0; i<times; i++){
-        str +=this;
+// String.prototype.repeatify = String.prototype.repeatify || function(times){
+//     var str = '';
+//     for(var i = 0; i<times; i++){
+//         str +=this;
+//     }
+//     return str
+// }
+//////////////////////////////////////////////////////////////////////////
+function test(){
+    console.log(a);
+    console.log(foo());
+    var a = 1;
+    function foo(){
+        return 2;
     }
-    return str
 }
-
+test()
 
 
 
