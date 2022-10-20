@@ -1,11 +1,60 @@
-let a =1/2; b=1*2;c=1+2;d=1-2;
-let arr = [a,b,c,d].map((num)=>{
-    return num + true
-});
-console.log(arr)//[1.5,3,4,0]
 
-
-
+// function fizz() {
+//     let result = null;
+//     for (let i = 1; i <= 100; i++) {
+//         if (i % 3 == 0 && i % 5 == 0) {
+//             console.log('FizzBuzz')
+//         } else
+//             if (i % 3 == 0) {
+//                 console.log('fizz')
+//             } else
+//                 if (i % 5 == 0) {
+//                     console.log('buzz')
+//                 } else {
+//                     (console.log(i))
+//                 }
+//     }
+// }
+// console.log(fizz())
+//////////////////////////////////////////////////////////////////////////
+// function createBase(a){
+//   return function (b){
+//     return a+b
+//   }
+// }
+// var addSix = createBase(6);
+// console.log(addSix);
+// console.log(addSix(10));
+// console.log(addSix(21))
+//////////////////////////////////////////////////////////////////////////
+// const str = 'hello bye ok no';
+// const rev = (str) =>{
+// const arrStr = str.split(' ');
+// const revArr = arrStr.map((item)=> [...item].reverse().join(''))
+// console.log(revArr.join(' '))
+// }
+// rev(str)
+//////////////////////////////////////////////////////////////////////////
+// var arr = [1,2,3];
+// console.log(Array.isArray(arr))
+// arr.length = 0;
+// console.log(arr.length)
+//////////////////////////////////////////////////////////////////////////
+// function mul(a){
+//     return function(b){
+//         return function(c){
+//             return a*b*c
+//         }
+//     }
+// }
+// console.log(mul(2)(3)(4));
+// console.log(mul(4)(3)(4));
+//////////////////////////////////////////////////////////////////////////
+// let a =1/2; b=1*2;c=1+2;d=1-2;
+// let arr = [a,b,c,d].map((num)=>{
+//     return num + true
+// });
+// console.log(arr)//[1.5,3,4,0]
 //////////////////////////////////////////////////////////////////////////
 // a()
 // function a(){
