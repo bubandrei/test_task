@@ -1,3 +1,13 @@
+// function getMiddle(s)
+// {
+//   return s.slice((s.length-1)/2, s.length/2+1);
+// }
+//////////////////////////////////////////////////////////////////////////
+// function lovefunc(flower1, flower2) {
+//     return (flower1 % 2 == 0 && flower2 % 2 !== 0) || (flower2 % 2 == 0 && flower1 % 2 !== 0) ? true : false
+// }
+// console.log(lovefunc(2, 3))
+//////////////////////////////////////////////////////////////////////////
 // function getMiddle(s) {
 //     if (s.length % 2 == 0) {
 //         return s[s.length / 2-1] + s[s.length / 2]
@@ -46,7 +56,7 @@
 //   if(sum<= 18.5){
 //     return "Underweight"
 //   }
-//   }
+// }
 // console.log(bmi(10, 5))
 //////////////////////////////////////////////////////////////////////////
 // function lovefunc(flower1, flower2) {
