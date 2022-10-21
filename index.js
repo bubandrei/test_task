@@ -2,7 +2,13 @@
 
 
 
-
+//////////////////////////////////////////////////////////////////////////
+// let num = 145263;
+// function descendingOrder(n){
+//     let arr = n.toString().split('');
+//    return Number(arr.map(Number).sort((a,b)=>b-a).join(''))
+// }
+// descendingOrder(num)
 //////////////////////////////////////////////////////////////////////////
 // function highAndLow(numbers) {
 //     let num = numbers.split(' ');
