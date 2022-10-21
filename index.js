@@ -1,7 +1,11 @@
-
-
-
-
+// function getMiddle(s) {
+//     if (s.length % 2 == 0) {
+//         return s[s.length / 2-1] + s[s.length / 2]
+//     } else {
+//         return s[Math.floor(s.length / 2)]
+//     }
+// }
+// console.log(getMiddle('test'))
 //////////////////////////////////////////////////////////////////////////
 // let num = 145263;
 // function descendingOrder(n){
@@ -15,7 +19,7 @@
 //     console.log(num)
 //     let newArr = num.map(Number)
 //     return Math.max.apply(0, newArr) + ' ' + Math.min.apply(0, newArr);
-    
+
 // }
 // highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
