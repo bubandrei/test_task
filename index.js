@@ -1,11 +1,54 @@
-let a =1/2; b=1*2;c=1+2;d=1-2;
-let arr = [a,b,c,d].map((num)=>{
-    return num + true
-});
-console.log(arr)//[1.5,3,4,0]
 
 
 
+
+
+//////////////////////////////////////////////////////////////////////////
+// function highAndLow(numbers) {
+//     let num = numbers.split(' ');
+//     console.log(num)
+//     let newArr = num.map(Number)
+//     return Math.max.apply(0, newArr) + ' ' + Math.min.apply(0, newArr);
+    
+// }
+// highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
+//////////////////////////////////////////////////////////////////////////
+// function highAndLow(numbers) {
+//     let str = numbers.split('');
+//     console.log(str)
+//     let arr = [];
+//     let result = null;
+//     str.sort((a, b) => a - b)
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] != ' ') {
+//             arr.push(str[i])
+//         }
+//     }
+//     arr.reverse()
+//     return result = arr[0] + ' ' + arr[arr.length - 1]
+// }
+
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
+//////////////////////////////////////////////////////////////////////////
+// function bmi(weight, height) {
+//     let sum = weight/Math.pow(height,2);
+//   if(sum<= 18.5){
+//     return "Underweight"
+//   }
+//   }
+// console.log(bmi(10, 5))
+//////////////////////////////////////////////////////////////////////////
+// function lovefunc(flower1, flower2) {
+//     return (flower1 % 2 == 0 && flower2%2 !== 0) || (flower2 % 2 == 0 && flower1%2 !== 0) ? true : false
+// }
+// console.log(lovefunc(2, 3))
+//////////////////////////////////////////////////////////////////////////
+// let a =1/2; b=1*2;c=1+2;d=1-2;
+// let arr = [a,b,c,d].map((num)=>{
+//     return num + true
+// });
+// console.log(arr)//[1.5,3,4,0]
 //////////////////////////////////////////////////////////////////////////
 // a()
 // function a(){
