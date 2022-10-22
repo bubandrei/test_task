@@ -5,9 +5,28 @@
 //////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////
-
+// var length = 10;
+// function fn() {
+// 	console.log(this.length);
+// }
+// var obj = {
+//   length: 5,
+//   method: function(fn) {
+//     fn();//undefined
+//     arguments[0]();//2
+//   }
+// };
+// obj.method(fn, 1);
 //////////////////////////////////////////////////////////////////////////
-
+// var hero = {
+//     _name: 'John Doe',
+//     getSecretIdentity: function (){
+//         return this._name;
+//     }
+// };
+// var stoleSecretIdentity = hero.getSecretIdentity;
+// console.log(stoleSecretIdentity());//undefined
+// console.log(hero.getSecretIdentity());//'John Doe'
 //////////////////////////////////////////////////////////////////////////
 // (function(x) {
 //     return (function(y) {
