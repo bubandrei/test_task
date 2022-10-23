@@ -1,5 +1,49 @@
 //////////////////////////////////////////////////////////////////////////
 
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////
+var k = 1;
+if (1) {
+  function foo() {};
+  console.log(typeof foo)
+  k += typeof foo;
+}
+console.log(k);
+//////////////////////////////////////////////////////////////////////////
+// const a = 'fizz';
+// const b = 'buzz';
+// const c = 'FizzBuzz';
+// for (let i = 1; i <= 100; i++) {
+//     i % 5 == 0 && i % 3 == 0 ? console.log(i + '' + c) : i % 3 == 0 ? console.log(i + '' + a) : console.log(i + '' + b)
+// }
+//////////////////////////////////////////////////////////////////////////
+// function createBase(a) {
+//     return function (b) {
+//         return a + b
+//     }
+// }
+
+// var addSix = createBase(6);
+// console.log(addSix(10));
+// console.log(addSix(21))
+// addSix(10); // returns 16
+// addSix(21); // returns 27
+//////////////////////////////////////////////////////////////////////////
+// function mul(a) {
+//     return function (b) {
+//         return function (c) {
+//             return a * b * c
+//         }
+//     }
+// }
+// console.log(mul(2)(3)(4)); // output : 24
+// console.log(mul(4)(3)(4)); // output : 48
 //////////////////////////////////////////////////////////////////////////
 // const strReverse = (str)=>{
 //     let arr = str.split(' ');
