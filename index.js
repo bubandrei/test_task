@@ -1,21 +1,24 @@
 //////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////
-const strReverse = (str)=>{
-    let arr = str.split(' ');
-    const newArr = arr.map((item)=>{
-        return item.split('').reverse().join('')
-    });
-    return newArr.join(' ')
-}
-console.log(strReverse('Welcome to this Javascript Guide!'))
-
-
-
-
-
-
-// strReverse('Welcome to this Javascript Guide!')
+// const strReverse = (str)=>{
+//     let arr = str.split(' ');
+//     const newArr = arr.map((item)=>{
+//         return item.split('').reverse().join('')
+//     });
+//     return newArr.join(' ')
+// }
+// console.log(strReverse('Welcome to this Javascript Guide!'))
+//////////////////////////////////////////////////////////////////////////
+// var arrayList = [1 , 2, 3];
+// console.log(Array.isArray(arrayList))
+//////////////////////////////////////////////////////////////////////////
+// function duplicate(x) {
+//     return x.concat(x)
+//     return [...x,...x]
+// }
+// console.log(duplicate([1, 2, 3, 4, 5]))
+// duplicate([1, 2, 3, 4, 5]);
 //////////////////////////////////////////////////////////////////////////
 // var b = 1;
 // function outer(){
