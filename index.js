@@ -1,3 +1,15 @@
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+function convert(arr){
+return arr.map((item)=> +item)
+}
+console.log(convert(['1','2','3']))
+
 //////////////////////////////////////////////////////////////////////////
 // function accum(s) {
 //     return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
