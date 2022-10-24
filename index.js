@@ -1,15 +1,26 @@
 
 
-
-
+function howManyGifts(maxBudget, gifts) {
+  let j = 0;
+  let newArr = gifts.sort((a, b) => a - b);
+  let sum = 0;
+  for (let i = 0; i <= newArr.length; i++) {
+    sum += newArr[i]
+    if (sum <= maxBudget) {
+      j++
+    } else {
+      return j
+    }
+  }
+}
+howManyGifts(20, [13, 2, 4, 6, 1])
 
 
 //////////////////////////////////////////////////////////////////////////
-function convert(arr){
-return arr.map((item)=> +item)
-}
-console.log(convert(['1','2','3']))
-
+// function convert(arr){
+// return arr.map((item)=> +item)
+// }
+// console.log(convert(['1','2','3']))
 //////////////////////////////////////////////////////////////////////////
 // function accum(s) {
 //     return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
@@ -520,9 +531,9 @@ console.log(convert(['1','2','3']))
     // myObject.func();
     //////////////////////////////////////////////////////////////////////////
     // (function() {
-    //     console.log(1); 
-    //     setTimeout(function(){console.log(2)}, 1000); 
-    //     setTimeout(function(){console.log(3)}, 0); 
+    //     console.log(1);
+    //     setTimeout(function(){console.log(2)}, 1000);
+    //     setTimeout(function(){console.log(3)}, 0);
     //     console.log(4);
     // })();
     //////////////////////////////////////////////////////////////////////////
@@ -1214,7 +1225,7 @@ console.log(convert(['1','2','3']))
     // function zeroAndOne(s) {
     //   let cnt = 0;
     //   for (let i=0; i<s.length; i++){
-    //     if ( (s[i]=='0' && s[i+1]=='1') || (s[i]=='1' && s[i+1]=='0') ) i++; 
+    //     if ( (s[i]=='0' && s[i+1]=='1') || (s[i]=='1' && s[i+1]=='0') ) i++;
     //     else cnt++;
     //   }
     //   console.log(cnt)
