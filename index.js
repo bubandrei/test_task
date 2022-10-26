@@ -1,21 +1,23 @@
-
-
-function howManyGifts(maxBudget, gifts) {
-  let j = 0;
-  let newArr = gifts.sort((a, b) => a - b);
-  let sum = 0;
-  for (let i = 0; i <= newArr.length; i++) {
-    sum += newArr[i]
-    if (sum <= maxBudget) {
-      j++
-    } else {
-      return j
-    }
-  }
+function past(h, m, s) {
+  return ((h * 3600) + (m * 60) + s) * 1000;
 }
-howManyGifts(20, [13, 2, 4, 6, 1])
 
-
+console.log(past(0, 1, 1))
+//////////////////////////////////////////////////////////////////////////
+// function howManyGifts(maxBudget, gifts) {
+//   let j = 0;
+//   let newArr = gifts.sort((a, b) => a - b);
+//   let sum = 0;
+//   for (let i = 0; i <= newArr.length; i++) {
+//     sum += newArr[i]
+//     if (sum <= maxBudget) {
+//       j++
+//     } else {
+//       return j
+//     }
+//   }
+// }
+// howManyGifts(20, [13, 2, 4, 6, 1])
 //////////////////////////////////////////////////////////////////////////
 // function convert(arr){
 // return arr.map((item)=> +item)
