@@ -1,8 +1,14 @@
-function past(h, m, s) {
-  return ((h * 3600) + (m * 60) + s) * 1000;
+function arrayPlusArray(arr1, arr2) {
+return [...arr1,...arr2].reduce((acum,prev)=>acum+prev,0)
+  // return arr1 + arr2; //something went wrong
 }
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]))
 
-console.log(past(0, 1, 1))
+//////////////////////////////////////////////////////////////////////////
+// function past(h, m, s) {
+//   return ((h * 3600) + (m * 60) + s) * 1000;
+// }
+// console.log(past(0, 1, 1))
 //////////////////////////////////////////////////////////////////////////
 // function howManyGifts(maxBudget, gifts) {
 //   let j = 0;
