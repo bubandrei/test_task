@@ -1,8 +1,19 @@
-function arrayPlusArray(arr1, arr2) {
-return [...arr1,...arr2].reduce((acum,prev)=>acum+prev,0)
-  // return arr1 + arr2; //something went wrong
-}
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]))
+    // function zeroAndOne(s) {
+    //   let cnt = 0;
+    //   for (let i=0; i<s.length; i++){
+    //     if ( (s[i]=='0' && s[i+1]=='1') || (s[i]=='1' && s[i+1]=='0') ) i++;
+    //     else cnt++;
+    //   }
+    //   console.log(cnt)
+    //   return cnt;
+    // }
+    // zeroAndOne("110100")
+//////////////////////////////////////////////////////////////////////////
+// function arrayPlusArray(arr1, arr2) {
+// return [...arr1,...arr2].reduce((acum,prev)=>acum+prev,0)
+//   return arr1 + arr2; //something went wrong
+// }
+// console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]))
 
 //////////////////////////////////////////////////////////////////////////
 // function past(h, m, s) {
