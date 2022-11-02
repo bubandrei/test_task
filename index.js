@@ -1,3 +1,16 @@
+
+function point(x, y) {
+    if (typeof x === 'undefined') {
+        x = 320;
+    };
+    if (typeof y === 'undefined') {
+        y = 130;
+    }
+    return { x: x, y: y }
+}
+console.log(point(3,2))
+console.log(point())
+
 //////////////////////////////////////////////////////////////////////////
 // var b = 1;
 // function outer(){
