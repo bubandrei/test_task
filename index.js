@@ -1,16 +1,36 @@
-
-function point(x, y) {
-    if (typeof x === 'undefined') {
-        x = 320;
-    };
-    if (typeof y === 'undefined') {
-        y = 130;
+    const obj = {
+        a:this,
+        b:function(){
+            return this;
+        },
+        c:()=>{
+            return this;
+        },
+        d(){
+            return this;
+        },
+        e:function(){
+            return this.a
+        }
     }
-    return { x: x, y: y }
-}
-console.log(point(3,2))
-console.log(point())
+console.log(obj.a);// obj
+console.log(obj.b);//obj
+console.log(obj.c);//undefind
+console.log(obj.d);//obj
+console.log(obj.e);//obj
 
+//////////////////////////////////////////////////////////////////////////
+// function point(x, y) {
+//     if (typeof x === 'undefined') {
+//         x = 320;
+//     };
+//     if (typeof y === 'undefined') {
+//         y = 130;
+//     }
+//     return { x: x, y: y }
+// }
+// console.log(point(3,2))
+// console.log(point())
 //////////////////////////////////////////////////////////////////////////
 // var b = 1;
 // function outer(){
