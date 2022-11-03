@@ -1,3 +1,4 @@
+
 const obj = {
         a:this,
         b:function(){
@@ -13,6 +14,7 @@ const obj = {
             return this.a
         }
     }
+    console.log(this)
 console.log(obj.a);
 console.log(obj.b);//obj
 console.log(obj.c);//undefind
