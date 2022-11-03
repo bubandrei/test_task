@@ -13,11 +13,11 @@
             return this.a
         }
     }
-console.log(obj.a);// obj
+console.log(obj.a);//undefind
 console.log(obj.b);//obj
 console.log(obj.c);//undefind
 console.log(obj.d);//obj
-console.log(obj.e);//obj
+console.log(obj.e);//undefind
 
 //////////////////////////////////////////////////////////////////////////
 // function point(x, y) {
