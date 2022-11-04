@@ -1,26 +1,45 @@
 
-const obj = {
-        a:this,
-        b:function(){
-            return this;
-        },
-        c:()=>{
-            return this;
-        },
-        d(){
-            return this;
-        },
-        e:function(){
-            return this.a
-        }
-    }
-    console.log(this)
-console.log(obj.a);
-console.log(obj.b);//obj
-console.log(obj.c);//undefind
-console.log(obj.d);//obj
-console.log(obj.e);//undefind
-
+    // function sum(a) {
+    //     const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+    //     let summary = [];
+    //     if (a) {
+    //         const word = a.toLowerCase().split('');
+    //         for (let i = 0; i < alphabet.length; i++) {
+    //             for (let j = 0; j <= word.length; j++) {
+    //                 if (alphabet[i] == word[j]) {
+    //                     summary.push(i + 1)
+    //                 }
+    //             }
+    //         }
+    //         let result = summary.reduce((acum, prev) => {
+    //             return acum + prev
+    //         }, 0);
+    //         return result
+    //     }
+    // }
+    // console.log(sum('friendship'))
+//////////////////////////////////////////////////////////////////////////
+// const obj = {
+//         a:this,
+//         b:function(){
+//             return this;
+//         },
+//         c:()=>{
+//             return this;
+//         },
+//         d(){
+//             return this;
+//         },
+//         e:function(){
+//             return this.a
+//         }
+//     }
+//     console.log(this)
+// console.log(obj.a);
+// console.log(obj.b);//obj
+// console.log(obj.c);//undefind
+// console.log(obj.d);//obj
+// console.log(obj.e);//undefind
 //////////////////////////////////////////////////////////////////////////
 // function point(x, y) {
 //     if (typeof x === 'undefined') {
@@ -1368,7 +1387,7 @@ console.log(obj.e);//undefind
     //         return result
     //     }
     // }
-    // sum('friendship')
+    // console.log(sum('friendship'))
 
     ////////////////////////////////////////////////////////////////////////////
     // function digitize(n) {
