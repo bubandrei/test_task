@@ -1,4 +1,16 @@
-
+    // var obj = {
+    //     fullname: 'Coling',
+    //     prop:{
+    //         fullname: 'Aurelio',
+    //         getFullname:function(){
+    //             return this.fullname;
+    //         }
+    //     }
+    // }
+    // var test = obj.prop.getFullname;
+    // console.log(test())
+    // console.log(test.call(obj.prop))
+//////////////////////////////////////////////////////////////////////////
     // function sum(a) {
     //     const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
     //     let summary = [];
