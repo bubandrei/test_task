@@ -1,58 +1,87 @@
+// const arr = ['a', 'b', 1, 2];
+// const [y] = arr;
+// console.log(y)//'a'
+// const [,,z] = arr;//1
+// console.log(z);//
+//////////////////////////////////////////////////////////////////////////
+//  * Описать функцию spinWords, получающую на вход строку и возвращающую строку,
+//  * в которой все слова длиной более 4 символов отражены зеркально.
+//  * @param {string} str
+//  * @return {string}
+//  */
+
+// function spinWords(str) {
+//     let arr = str.split(' ')
+//     let newArr = arr.map((item) => {
+//         if (item.length > 4) {
+//             let result = '';
+//             for (let i = item.length; i > 0; i--) {
+//                 result += item[i - 1]
+//             }
+//             return result
+//         } else {
+//             return item
+//         }
+//     })
+//     return newArr.join(' ')
+// }
+// console.log(spinWords("Welcome")); // emocleW
+// console.log(spinWords("Hey fellow warriors")); // Hey wollef sroirraw
+// console.log(spinWords("This is a test")); // This is a test
+// console.log(spinWords("This is another test")); // This is rehtona test
+//////////////////////////////////////////////////////////////////////////
 // * Построить строку из объекта данных,
 // * где ключ - это символ,
 // * а значение - массив с индексами в строке для этого символа
 // * @param {object} obj
 // * @return {string}
 // */
-const data = {
-    ' ': [5],
-    d: [10],
-    e: [1],
-    H: [0],
-    l: [2, 3, 9],
-    o: [4, 7],
-    r: [8],
-    w: [6],
-}
+// const data = {
+//     ' ': [5],
+//     d: [10],
+//     e: [1],
+//     H: [0],
+//     l: [2, 3, 9],
+//     o: [4, 7],
+//     r: [8],
+//     w: [6],
+// }
 
-const data2 = {
-    ' ': [1, 6],
-    '!': [17],
-    a: [8, 10],
-    c: [12],
-    e: [5],
-    I: [0],
-    i: [14],
-    J: [7],
-    l: [2],
-    o: [3],
-    p: [15],
-    r: [13],
-    S: [11],
-    t: [16],
-    v: [4, 9]
-}
-
-
-const buildString = (obj) => {
-    let val = Object.values(obj);
-    let propertyLength = [];
-    let arr3 = val.map((item) => {
-        return propertyLength.push(...item)
-    })
-    let arr = [];
-    for (let i = 0; i < propertyLength.length; i++) {
-        for (key in obj) {
-            let y = obj[key].map((item) => {
-                    return item == i ? arr.push(key): arr
-            })
-        }
-    }
-    console.log(arr.join(''))
-}
-buildString(data2)
-
-
+// const data2 = {
+//     ' ': [1, 6],
+//     '!': [17],
+//     a: [8, 10],
+//     c: [12],
+//     e: [5],
+//     I: [0],
+//     i: [14],
+//     J: [7],
+//     l: [2],
+//     o: [3],
+//     p: [15],
+//     r: [13],
+//     S: [11],
+//     t: [16],
+//     v: [4, 9]
+// }
+// const buildString = (obj) => {
+//     let val = Object.values(obj);
+//     let propertyLength = [];
+//     let arr3 = val.map((item) => {
+//         return propertyLength.push(...item)
+//     })
+//     let arr = [];
+//     for (let i = 0; i < propertyLength.length; i++) {
+//         for (key in obj) {
+//             let y = obj[key].map((item) => {
+//                     return item == i ? arr.push(key): arr
+//             })
+//         }
+//     }
+//     console.log(arr.join(''))
+// }
+// buildString(data2)
+//////////////////////////////////////////////////////////////////////////
 // var obj = {
     //     fullname: 'Coling',
     //     prop:{
