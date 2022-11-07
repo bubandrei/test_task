@@ -5,38 +5,52 @@
 // * @return {string}
 // */
 const data = {
- ' ': [5],
- d: [10],
- e: [1],
- H: [0],
- l: [2, 3, 9],
- o: [4, 7],
- r: [8],
- w: [6],
+    ' ': [5],
+    d: [10],
+    e: [1],
+    H: [0],
+    l: [2, 3, 9],
+    o: [4, 7],
+    r: [8],
+    w: [6],
 }
 
 const data2 = {
- ' ': [1, 6],
- '!': [17],
- a: [8, 10],
- c: [12],
- e: [5],
- I: [0],
- i: [14],
- J: [7],
- l: [2],
- o: [3],
- p: [15],
- r: [13],
- S: [11],
- t: [16],
- v: [4, 9]
+    ' ': [1, 6],
+    '!': [17],
+    a: [8, 10],
+    c: [12],
+    e: [5],
+    I: [0],
+    i: [14],
+    J: [7],
+    l: [2],
+    o: [3],
+    p: [15],
+    r: [13],
+    S: [11],
+    t: [16],
+    v: [4, 9]
 }
+
 
 const buildString = (obj) => {
- //тут ваш код
+    let val = Object.values(obj);
+    let propertyLength = [];
+    let arr3 = val.map((item) => {
+        return propertyLength.push(...item)
+    })
+    let arr = [];
+    for (let i = 0; i < propertyLength.length; i++) {
+        for (key in obj) {
+            let y = obj[key].map((item) => {
+                    return item == i ? arr.push(key): arr
+            })
+        }
+    }
+    console.log(arr.join(''))
 }
-
+buildString(data2)
 
 
 // var obj = {
