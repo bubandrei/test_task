@@ -10,25 +10,22 @@
 //  * @return {string}
 //  */
 
-// function spinWords(str) {
-//     let arr = str.split(' ')
-//     let newArr = arr.map((item) => {
-//         if (item.length > 4) {
-//             let result = '';
-//             for (let i = item.length; i > 0; i--) {
-//                 result += item[i - 1]
-//             }
-//             return result
-//         } else {
-//             return item
-//         }
-//     })
-//     return newArr.join(' ')
-// }
-// console.log(spinWords("Welcome")); // emocleW
-// console.log(spinWords("Hey fellow warriors")); // Hey wollef sroirraw
-// console.log(spinWords("This is a test")); // This is a test
-// console.log(spinWords("This is another test")); // This is rehtona test
+function spinWords(str) {
+    let arr = str.split(' ')
+    let newArr = arr.map((item) => {
+        if (item.length > 4) {
+            let result = [...item].reverse().join('')
+            return result
+        } else {
+            return item
+        }
+    })
+    return newArr.join(' ')
+}
+console.log(spinWords("Welcome")); // emocleW
+console.log(spinWords("Hey fellow warriors")); // Hey wollef sroirraw
+console.log(spinWords("This is a test")); // This is a test
+console.log(spinWords("This is another test")); // This is rehtona test
 //////////////////////////////////////////////////////////////////////////
 // * Построить строку из объекта данных,
 // * где ключ - это символ,
