@@ -1,3 +1,7 @@
+function sumMix(x) {
+    return x.reduce((accum, prev) => +prev + accum, 0);
+}
+console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]))
 // const arr = ['a', 'b', 1, 2];
 // const [y] = arr;
 // console.log(y)//'a'
