@@ -1,7 +1,36 @@
-function stringToArray(string) {
-    return string.split(' ')
+const verify = (text) => {
+    let result = [];
+    let open = "([<";
+    let close = ")]>";
+    let chr = "";
+    for (let i = 0; i < text.length; i++) {
+        chr = text[i];
+          if (open.indexOf(chr) !== -1) {
+            console.log(open.indexOf(chr))
+              result.push(chr); 
+          } 
+          else if (close.indexOf(chr) !== -1) {
+              if (result.length === 0) {
+                  return 0;
+              }
+              if (result[result.length-1] === open[close.indexOf(chr)]) {
+                  result.pop();
+              }
+              else {
+                  return 0;
+              }
+          }
+      }
+    return result.length === 0 ? 1 : 0;
 }
-console.log(stringToArray("Robin Singh"))
+console.log(verify("---(++++)----"))
+
+
+
+// function stringToArray(string) {
+//     return string.split(' ')
+// }
+// console.log(stringToArray("Robin Singh"))
 //////////////////////////////////////////////////////////////////////////
 // function sumMix(x) {
 //     return x.reduce((accum, prev) => +prev + accum, 0);
