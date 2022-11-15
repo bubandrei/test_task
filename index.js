@@ -1,32 +1,40 @@
-const verify = (text) => {
-    let result = [];
-    let open = "([<";
-    let close = ")]>";
-    let chr = "";
-    for (let i = 0; i < text.length; i++) {
-        chr = text[i];
-          if (open.indexOf(chr) !== -1) {
-            console.log(open.indexOf(chr))
-              result.push(chr); 
-          } 
-          else if (close.indexOf(chr) !== -1) {
-              if (result.length === 0) {
-                  return 0;
-              }
-              if (result[result.length-1] === open[close.indexOf(chr)]) {
-                  result.pop();
-              }
-              else {
-                  return 0;
-              }
-          }
-      }
-    return result.length === 0 ? 1 : 0;
+//////////////////////////////////////////////////////////////////////////
+function correct(string) {
+    let arr = string.split('')
+    let result = arr.map((item, index) => {
+      return  item === '5' ? arr[index] = 'S' : item === '0' ? arr[index] = 'O' : item === '1' ? arr[index] = 'I' : item
+    }).join('')
+    return result
 }
-console.log(verify("---(++++)----"))
-
-
-
+console.log(correct("L0ND0N"))
+//////////////////////////////////////////////////////////////////////////
+// const verify = (text) => {
+//     let result = [];
+//     let open = "([<";
+//     let close = ")]>";
+//     let chr = "";
+//     for (let i = 0; i < text.length; i++) {
+//         chr = text[i];
+//           if (open.indexOf(chr) !== -1) {
+//             console.log(open.indexOf(chr))
+//               result.push(chr); 
+//           } 
+//           else if (close.indexOf(chr) !== -1) {
+//               if (result.length === 0) {
+//                   return 0;
+//               }
+//               if (result[result.length-1] === open[close.indexOf(chr)]) {
+//                   result.pop();
+//               }
+//               else {
+//                   return 0;
+//               }
+//           }
+//       }
+//     return result.length === 0 ? 1 : 0;
+// }
+// console.log(verify("---(++++)----"))
+//////////////////////////////////////////////////////////////////////////
 // function stringToArray(string) {
 //     return string.split(' ')
 // }
