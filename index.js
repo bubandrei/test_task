@@ -1,12 +1,41 @@
-//////////////////////////////////////////////////////////////////////////
-function correct(string) {
-    let arr = string.split('')
-    let result = arr.map((item, index) => {
-      return  item === '5' ? arr[index] = 'S' : item === '0' ? arr[index] = 'O' : item === '1' ? arr[index] = 'I' : item
-    }).join('')
-    return result
+const people = [
+  { name: 'A', age: 18 },
+  { name: 'B', age: 20 },
+  { name: 'C', age: 9 },
+  { name: 'D', age: 30 },
+  { name: 'E', age: 25 },
+]
+function getPeople() {
+  let arr = [];
+  let i = 0;
+  const inter = setInterval(() => {
+    if (people[i]) {
+      if (people[i].age > 18) {
+        arr.push(people[i].name);
+      }
+      console.log(arr)
+      i++
+    } else {
+      clearInterval(inter)
+    }
+  }, 1000)
+
 }
-console.log(correct("L0ND0N"))
+getPeople()
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+// function correct(string) {
+//     let arr = string.split('')
+//     let result = arr.map((item, index) => {
+//       return  item === '5' ? arr[index] = 'S' : item === '0' ? arr[index] = 'O' : item === '1' ? arr[index] = 'I' : item
+//     }).join('')
+//     return result
+// }
+// console.log(correct("L0ND0N"))
 //////////////////////////////////////////////////////////////////////////
 // const verify = (text) => {
 //     let result = [];
