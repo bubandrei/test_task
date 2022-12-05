@@ -12,8 +12,8 @@ function getPeople() {
     if (people[i]) {
       if (people[i].age > 18) {
         arr.push(people[i].name);
+        console.log(arr)
       }
-      console.log(arr)
       i++
     } else {
       clearInterval(inter)
