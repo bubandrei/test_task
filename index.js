@@ -1,32 +1,31 @@
-const people = [
-  { name: 'A', age: 18 },
-  { name: 'B', age: 20 },
-  { name: 'C', age: 9 },
-  { name: 'D', age: 30 },
-  { name: 'E', age: 25 },
-]
-function getPeople() {
-  let arr = [];
-  let i = 0;
-  const inter = setInterval(() => {
-    if (people[i]) {
-      if (people[i].age > 18) {
-        arr.push(people[i].name);
-        console.log(arr)
-      }
-      i++
-    } else {
-      clearInterval(inter)
-    }
-  }, 1000)
+let a = -true;
+let b = -false;
+let c = a==b;
+console.log(c)
+// const people = [
+//   { name: 'A', age: 18 },
+//   { name: 'B', age: 20 },
+//   { name: 'C', age: 9 },
+//   { name: 'D', age: 30 },
+//   { name: 'E', age: 25 },
+// ]
+// function getPeople() {
+//   let arr = [];
+//   let i = 0;
+//   const inter = setInterval(() => {
+//     if (people[i]) {
+//       if (people[i].age > 18) {
+//         arr.push(people[i].name);
+//         console.log(arr)
+//       }
+//       i++
+//     } else {
+//       clearInterval(inter)
+//     }
+//   }, 1000)
 
-}
-getPeople()
-
-
-
-
-
+// }
+// getPeople()
 //////////////////////////////////////////////////////////////////////////
 // function correct(string) {
 //     let arr = string.split('')
