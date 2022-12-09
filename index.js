@@ -1,9 +1,26 @@
-let person = {name:'Jonh'};
-const members = [person];
-console.log(members)
-person = null;
-console.log(members)
-console.log(person)
+function pl(s) {
+    let c = '';
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === 'm') {
+            c += '-'
+        }
+        if (s[i] === 'p') {
+            c += '+'
+        }
+    }
+    console.log(c)
+}
+pl('minusplusminusminusplusminus')
+
+
+
+
+// let person = {name:'Jonh'};
+// const members = [person];
+// console.log(members)
+// person = null;
+// console.log(members)
+// console.log(person)
 
 
 
