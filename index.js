@@ -1,19 +1,28 @@
+let person = {name:'Jonh'};
+const members = [person];
+console.log(members)
+person = null;
+console.log(members)
+console.log(person)
+
+
+
 // const a = 'g';
 // console.log(a == NaN? 'y': 'g')
+//////////////////////////////////////////////////////////////////////////
+// const a = {
+//     d: 'a',
+//     b: 'g',
+//     hob: ['a', 'f'],
+// list() {
+//         this.hob.forEach(function (hobby) {
+//             console.log(`${this.d} ${ hobby }`)
+//         })
+//     }
+// }
+// a.list()
 
-const a = {
-    d: 'a',
-    b: 'g',
-    hob: ['a', 'f'],
-list() {
-        this.hob.forEach(function (hobby) {
-            console.log(`${this.d} ${ hobby }`)
-        })
-    }
-}
-a.list()
-
-
+//////////////////////////////////////////////////////////////////////////
 // let a = -true;
 // let b = -false;
 // let c = a==b;
