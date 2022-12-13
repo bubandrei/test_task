@@ -10,9 +10,11 @@ const array = [10, 2, 1, 7, 5, 6, 6];
 //         min = array[i]
 //     }
 // }
-let max = Math.max.apply(null,array)
-let min = Math.min.apply(null,array)
+// let max = Math.max.apply(null,array)
+// let min = Math.min.apply(null,array)
 
+let max = array.reduce((accum, next) => accum > next ? accum : next)
+let min = array.reduce((accum, next) => accum < next ? accum : next)
 console.log(max)
 console.log(min)
 
