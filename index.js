@@ -1,5 +1,15 @@
-
-
+const users = [
+    {
+        name: 'Jonh',
+        age: 40
+    },
+    {
+        name: 'Alex',
+        age: 30
+    }
+]
+users.sort((a, b) => a.age - b.age)
+console.log(users)
 
 
 // const array = [10, 2, 1, 7, 5, 6, 6];
