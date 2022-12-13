@@ -1,12 +1,28 @@
-const array = [1, 2, 2, 4, 5, 6, 6];
-const sum = array.reduce((accum, prev) => accum + prev, 0);
-console.log(sum)
-
-let result = 0;
+const array = [10, 2, 1, 7, 5, 6, 6];
+let max = array[0];
+let min = array[0];
 for (let i = 0; i < array.length; i++) {
-    result += array[i]
+    // max = array[i]
+    if (max < array[i] ) {
+        max = array[i]
+    }
+    if (min > array[i]) {
+        min = array[i]
+    }
 }
-console.log(result)
+console.log(max)
+console.log(min)
+
+
+
+// const sum = array.reduce((accum, prev) => accum + prev, 0);
+// console.log(sum)
+
+// let result = 0;
+// for (let i = 0; i < array.length; i++) {
+//     result += array[i]
+// }
+// console.log(result)
 
 
 
