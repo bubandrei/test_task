@@ -1,6 +1,192 @@
-const arr = [7, 'correct', 0, false, 9, NaN, ''];
-const res = arr.filter((item) => !!item);
-console.log(res)
+const add = function addThem(){
+    let counter = 1;
+    return value=>{
+        counter *=value;
+        return counter
+    }
+}
+
+const addSub = add();
+for(var i = 1; i<=3; i++){
+    setTimeout(()=>console.log(addSub(i)), 1000)
+}
+
+
+// function sayHi(){
+//     return (()=>0)();
+// }
+// console.log(typeof sayHi())
+
+
+// class A{
+//     static b =1;
+//     c = 2;
+//     constructor(){
+//         this.b = 3;
+//         this.c = 4;
+//     }
+// }
+// const B = new A();
+// console.log(A.b,A.c,B.b,B.c)
+
+// let fruit = ['Apple', 'Peach'];
+// let moreFruit = [...fruit];
+// fruit.push('Orange');
+// console.log(moreFruit)
+
+
+// const getN = async n=> await n;
+// const getM = m => Promise.resolve(m);
+
+// console.log( getN('2'));
+// console.log( getM('3'));
+
+// (()=>{
+//     let x = (y=10);
+// })();
+
+// console.log(typeof x);
+// console.log(typeof y);
+
+
+// const arr = [1,2,3];
+// arr[10] = 99;
+// console.log(arr[6])
+
+
+// for (var i = 0; i < 5; i++) {
+//     setTimeout(function() { console.log(i); }, i * 1000 );
+//   }
+
+// var length = 10;
+// function fn() {
+// 	console.log(this.length);
+// }
+
+// var obj = {
+//   length: 5,
+//   method: function(fn) {
+//     fn();
+//     arguments[0]();
+//   }
+// };
+
+// obj.method(fn, 1);
+
+// var hero = {
+//     _name: 'John Doe',
+//     getSecretIdentity: function (){
+//         return this._name;
+//     }
+// };
+
+// var stoleSecretIdentity = hero.getSecretIdentity;
+
+// console.log(stoleSecretIdentity());//undefind
+// console.log(hero.getSecretIdentity());//'John Doe'
+
+// (function(x) {
+//     return (function(y) {
+//         console.log(x);
+//     })(2)
+// })(1);
+
+// console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
+
+// var a={},
+//     b={key:'b'},
+//     c={key:'c'};
+
+// a[b]=123;
+// a[c]=456;
+
+// console.log(a[b]);//456
+
+// console.log(false == '0')//true
+// console.log(false === '0')//false
+
+// console.log("0 || 1 = "+(0 || 1));//1
+// console.log("1 || 2 = "+(1 || 2));//1
+// console.log("0 && 1 = "+(0 && 1));//0
+// console.log("1 && 2 = "+(1 && 2));//2
+
+
+// var globalVar = "xyz";
+
+// (function outerFunc(outerArg) {
+//     var outerVar = 'a';
+    
+//     (function innerFunc(innerArg) {
+//     var innerVar = 'b';
+    
+//     console.log(
+//         "outerArg = " + outerArg + "\n" +//123
+//         "innerArg = " + innerArg + "\n" +//456
+//         "outerVar = " + outerVar + "\n" +//a
+//         "innerVar = " + innerVar + "\n" +//b
+//         "globalVar = " + globalVar);//xyz
+    
+//     })(456);
+// })(123);
+
+
+// console.log(1 +  "2" + "2");//122
+// console.log(1 +  +"2" + "2");//32
+// console.log(1 +  -"1" + "2");//02
+// console.log(+"1" +  "1" + "2");//112
+// console.log( "A" - "B" + "2");//Nan2
+// console.log( "A" - "B" + 2);//Nan
+
+
+// var arr1 = "john".split('');
+// var arr2 = arr1.reverse();
+// var arr3 = "jones".split('');
+// arr2.push(arr3);
+// console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));//5
+// console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));//5
+
+// var d = {};
+// [ 'zebra', 'horse' ].forEach(function(k) {
+// 	d[k] = undefined;
+// });
+// console.log(d)
+
+// function sum(a, b) {
+//     if (b !== undefined) {
+//         return a + b
+//     }
+//     return function (b) {
+//         return a + b
+//     }
+// }
+// console.log(sum(2, 3));   // Outputs 5
+// console.log(sum(2)(3));  // Outputs 5
+
+
+// var myObject = {
+//     foo: "bar",
+//     func: function() {
+//         var self = this;
+//         console.log("outer func:  this.foo = " + this.foo);//bar
+//         console.log("outer func:  self.foo = " + self.foo);//bar
+//         (function() {
+//             console.log("inner func:  this.foo = " + this.foo);//undefind
+//             console.log("inner func:  self.foo = " + self.foo);//bar
+//         }());
+//     }
+// };
+// myObject.func();
+
+
+// (function(){
+//     var a = b = 3;
+//   })();
+//   console.log("a defined? " + (typeof a !== 'undefined'));//false
+//   console.log("b defined? " + (typeof b !== 'undefined'));//true
+
+// const arr = [7, 'correct', 0, false, 9, NaN, ''];
+// const res = arr.filter((item) => !!item);
+// console.log(res)
 
 
 
