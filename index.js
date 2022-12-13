@@ -1,10 +1,17 @@
-const array = [10, 2, 1, 7, 5, 6, 6];
-let newArr = [];
-// array.reverse(array);
-for (let i = array.length - 1; i >= 0; i--) {
-    newArr.push(array[i])
-}
-console.log(newArr)
+const arr = [7, 'correct', 0, false, 9, NaN, ''];
+const res = arr.filter((item) => !!item);
+console.log(res)
+
+
+
+
+// const array = [10, 2, 1, 7, 5, 6, 6];
+// let newArr = [];
+// // array.reverse(array);
+// for (let i = array.length - 1; i >= 0; i--) {
+//     newArr.push(array[i])
+// }
+// console.log(newArr)
 // console.log(array)
 // const users = [
 //     {
