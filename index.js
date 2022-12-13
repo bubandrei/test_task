@@ -1,15 +1,18 @@
 const array = [10, 2, 1, 7, 5, 6, 6];
-let max = array[0];
-let min = array[0];
-for (let i = 0; i < array.length; i++) {
-    // max = array[i]
-    if (max < array[i] ) {
-        max = array[i]
-    }
-    if (min > array[i]) {
-        min = array[i]
-    }
-}
+// let max = array[0];
+// let min = array[0];
+// for (let i = 0; i < array.length; i++) {
+//     // max = array[i]
+//     if (max < array[i] ) {
+//         max = array[i]
+//     }
+//     if (min > array[i]) {
+//         min = array[i]
+//     }
+// }
+let max = Math.max.apply(null,array)
+let min = Math.min.apply(null,array)
+
 console.log(max)
 console.log(min)
 
