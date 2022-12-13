@@ -1,19 +1,28 @@
-function pl(s) {
-    let c = '';
-    for (let i = 0; i < s.length; i++) {
-        if (s[i] === 'm') {
-            c += '-'
-        }
-        if (s[i] === 'p') {
-            c += '+'
-        }
-    }
-    console.log(c)
+const array = [1, 2, 2, 4, 5, 6, 6];
+const sum = array.reduce((accum, prev) => accum + prev, 0);
+console.log(sum)
+
+let result = 0;
+for (let i = 0; i < array.length; i++) {
+    result += array[i]
 }
-pl('minusplusminusminusplusminus')
+console.log(result)
 
 
 
+// function pl(s) {
+//     let c = '';
+//     for (let i = 0; i < s.length; i++) {
+//         if (s[i] === 'm') {
+//             c += '-'
+//         }
+//         if (s[i] === 'p') {
+//             c += '+'
+//         }
+//     }
+//     console.log(c)
+// }
+// pl('minusplusminusminusplusminus')
 
 // let person = {name:'Jonh'};
 // const members = [person];
