@@ -1,15 +1,24 @@
-const users = [
-    {
-        name: 'Jonh',
-        age: 40
-    },
-    {
-        name: 'Alex',
-        age: 30
-    }
-]
-users.sort((a, b) => a.age - b.age)
-console.log(users)
+const array = [10, 2, 1, 7, 5, 6, 6];
+let newArr = [];
+// array.reverse(array);
+for (let i = array.length - 1; i >= 0; i--) {
+    newArr.push(array[i])
+}
+console.log(newArr)
+// console.log(array)
+// const users = [
+//     {
+//         name: 'Jonh',
+//         age: 40
+//     },
+//     {
+//         name: 'Alex',
+//         age: 30
+//     }
+// ]
+// // users.sort((a, b) => a.age - b.age)
+// users.sort((a, b) => a.name.localeCompare(b.name))
+// console.log(users)
 
 
 // const array = [10, 2, 1, 7, 5, 6, 6];
