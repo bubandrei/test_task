@@ -1,4 +1,15 @@
-const array = [10, 2, 1, 7, 5, 6, 6];
+
+
+
+
+// const array = [10, 2, 1, 7, 5, 6, 6];
+
+// let result = array.sort((a, b) => a - b)
+// let min = array.sort((a, b) => b - a)
+// console.log(result)
+// console.log(min)
+
+
 // let max = array[0];
 // let min = array[0];
 // for (let i = 0; i < array.length; i++) {
@@ -13,10 +24,10 @@ const array = [10, 2, 1, 7, 5, 6, 6];
 // let max = Math.max.apply(null,array)
 // let min = Math.min.apply(null,array)
 
-let max = array.reduce((accum, next) => accum > next ? accum : next)
-let min = array.reduce((accum, next) => accum < next ? accum : next)
-console.log(max)
-console.log(min)
+// let max = array.reduce((accum, next) => accum > next ? accum : next)
+// let min = array.reduce((accum, next) => accum < next ? accum : next)
+// console.log(max)
+// console.log(min)
 
 
 
