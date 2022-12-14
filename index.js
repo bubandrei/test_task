@@ -1,15 +1,77 @@
-const add = function addThem(){
-    let counter = 1;
-    return value=>{
-        counter *=value;
-        return counter
-    }
+function compare(a, b){
+    let str1 = a.toLowerCase();
+    let str2 = b.toLowerCase();
+    for(let i = 0, maxLength = Math.max(str1.length, str2.length); i<=maxLength; i++){
+        if(i === maxLength){
+           return 0
+        } 
+        if(str1[i] > str2[i]){
+            return 1
+        }
+        if(str1[i] < str2[i]){
+            return -1
+        } 
+    } 
 }
+console.log(compare('abc','abc')) 
+    
 
-const addSub = add();
-for(var i = 1; i<=3; i++){
-    setTimeout(()=>console.log(addSub(i)), 1000)
-}
+
+
+
+
+// function func(s, a, b){
+//     var match_empty=/^$/ ;
+//     if (s.match(match_empty)){
+//         return -1;
+//     } else {
+//         var i=s.length-1;
+//         var aIndex=-1;
+//         var bIndex=-1;
+//         while ((aIndex==-1) && (bIndex==-1) && (i>=0)){
+//             if (s.substring(i, i+1) == a)
+//                 aIndex=i;
+//             if (s.substring(i, i+1) == b)
+//                 bIndex=i;
+//                 i--;                                                                            
+//         }
+//         if (aIndex != -1){
+//             if (bIndex == -1){
+//                 return aIndex;
+//             }else{
+//                 return Math.max(aIndex, bIndex); 
+//             }
+                                                                                            
+//         } else {
+//             if (bIndex != -1)
+//                 return bIndex;       
+//             else
+//                 return -1;                                                                                 
+//    }                                                       
+//  }
+// };
+
+
+// function func(s, a, b) {
+//     return (s.length)
+//       ? Math.max(s.lastIndexOf(a), s.lastIndexOf(b))
+//       : -1;
+//   };
+  
+//   console.log(func('abcdefgh', 'm', 'c'));
+
+// const add = function addThem(){
+//     let counter = 1;
+//     return value=>{
+//         counter *=value;
+//         return counter
+//     }
+// }
+
+// const addSub = add();
+// for(var i = 1; i<=3; i++){
+//     setTimeout(()=>console.log(addSub(i)), 1000)
+// }
 
 
 // function sayHi(){
@@ -339,7 +401,7 @@ for(var i = 1; i<=3; i++){
 //     for (let i = 0; i < text.length; i++) {
 //         chr = text[i];
 //           if (open.indexOf(chr) !== -1) {
-//             console.log(open.indexOf(chr))
+//             // console.log(open.indexOf(chr))
 //               result.push(chr); 
 //           } 
 //           else if (close.indexOf(chr) !== -1) {
@@ -347,11 +409,12 @@ for(var i = 1; i<=3; i++){
 //                   return 0;
 //               }
 //               if (result[result.length-1] === open[close.indexOf(chr)]) {
+//                 console.log(open[close.indexOf(chr)])
 //                   result.pop();
 //               }
-//               else {
-//                   return 0;
-//               }
+//             //   else {
+//             //       return 0;
+//             //   }
 //           }
 //       }
 //     return result.length === 0 ? 1 : 0;
