@@ -1,9 +1,21 @@
-function greet(name){
-  if(name === "Johnny")
-    return "Hello, my love!";
-  return "Hello, " + name + "!";
+function filter_list(l) {
+  return l.filter((el)=> Number.isInteger(el))
+//  return l.filter((el)=> isFinite(el) && el === parseInt(el, 10))
 }
-console.log(greet("Simon"))
+console.log(filter_list([1,2,'a','b']))
+//////////////////////////////////////////////////////////////////////////
+// function hero(bullets, dragons){
+//   return dragons*2<=bullets? true:false
+//   }
+//   console.log(hero(10, 5))
+//////////////////////////////////////////////////////////////////////////
+// function greet(name){
+//   if(name === "Johnny")
+//     return "Hello, my love!";
+//   return "Hello, " + name + "!";
+// }
+// console.log(greet("Simon"))
+//////////////////////////////////////////////////////////////////////////
 // const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 // return mpg*fuelLeft >= distanceToPump? true:false;
 // };
