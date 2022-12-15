@@ -1,18 +1,19 @@
-function fakeBin(x){
-    let result = '';
-for(let i = 0; i<x.length; i++){
-    if(x[i] < 5){
-result += '0';
-    } else {
-        result += '1'
-    }
-}
-return result
-}
-
-console.log(fakeBin('45385593107843568'))
-
-
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ')
+  }
+  console.log(reverseWords("yoda doesn't speak like this" ))
+// function fakeBin(x){
+//     let result = '';
+// for(let i = 0; i<x.length; i++){
+//     if(x[i] < 5){
+// result += '0';
+//     } else {
+//         result += '1'
+//     }
+// }
+// return result
+// }
+// console.log(fakeBin('45385593107843568'))
 // const set = new Set([1,1,2,3,4]);
 // console.log(set)
 
