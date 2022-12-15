@@ -1,7 +1,13 @@
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-return mpg*fuelLeft >= distanceToPump? true:false;
-};
-console.log(zeroFuel(50, 25, 2))
+function greet(name){
+  if(name === "Johnny")
+    return "Hello, my love!";
+  return "Hello, " + name + "!";
+}
+console.log(greet("Simon"))
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+// return mpg*fuelLeft >= distanceToPump? true:false;
+// };
+// console.log(zeroFuel(50, 25, 2))
 
 //////////////////////////////////////////////////////////////////////////
 // function reverseWords(str){
