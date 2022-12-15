@@ -1,7 +1,14 @@
-function reverseWords(str){
-    return str.split(' ').reverse().join(' ')
-  }
-  console.log(reverseWords("yoda doesn't speak like this" ))
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+return mpg*fuelLeft >= distanceToPump? true:false;
+};
+console.log(zeroFuel(50, 25, 2))
+
+//////////////////////////////////////////////////////////////////////////
+// function reverseWords(str){
+//     return str.split(' ').reverse().join(' ')
+//   }
+//   console.log(reverseWords("yoda doesn't speak like this" ))
+//////////////////////////////////////////////////////////////////////////
 // function fakeBin(x){
 //     let result = '';
 // for(let i = 0; i<x.length; i++){
@@ -16,7 +23,7 @@ function reverseWords(str){
 // console.log(fakeBin('45385593107843568'))
 // const set = new Set([1,1,2,3,4]);
 // console.log(set)
-
+//////////////////////////////////////////////////////////////////////////
 // function compare(a, b){
 //     let str1 = a.toLowerCase();
 //     let str2 = b.toLowerCase();
@@ -33,8 +40,7 @@ function reverseWords(str){
 //     } 
 // }
 // console.log(compare('abc','abc')) 
-    
-
+//////////////////////////////////////////////////////////////////////////
 // function func(s, a, b){
 //     var match_empty=/^$/ ;
 //     if (s.match(match_empty)){
@@ -55,8 +61,7 @@ function reverseWords(str){
 //                 return aIndex;
 //             }else{
 //                 return Math.max(aIndex, bIndex); 
-//             }
-                                                                                            
+//             }                                                                                     
 //         } else {
 //             if (bIndex != -1)
 //                 return bIndex;       
@@ -65,8 +70,7 @@ function reverseWords(str){
 //    }                                                       
 //  }
 // };
-
-
+//////////////////////////////////////////////////////////////////////////
 // function func(s, a, b) {
 //     return (s.length)
 //       ? Math.max(s.lastIndexOf(a), s.lastIndexOf(b))
@@ -74,7 +78,7 @@ function reverseWords(str){
 //   };
   
 //   console.log(func('abcdefgh', 'm', 'c'));
-
+//////////////////////////////////////////////////////////////////////////
 // const add = function addThem(){
 //     let counter = 1;
 //     return value=>{
@@ -82,19 +86,15 @@ function reverseWords(str){
 //         return counter
 //     }
 // }
-
 // const addSub = add();
 // for(var i = 1; i<=3; i++){
 //     setTimeout(()=>console.log(addSub(i)), 1000)
-// }
-
-
+// 
 // function sayHi(){
 //     return (()=>0)();
 // }
 // console.log(typeof sayHi())
-
-
+//////////////////////////////////////////////////////////////////////////
 // class A{
 //     static b =1;
 //     c = 2;
@@ -105,41 +105,35 @@ function reverseWords(str){
 // }
 // const B = new A();
 // console.log(A.b,A.c,B.b,B.c)
-
+//////////////////////////////////////////////////////////////////////////
 // let fruit = ['Apple', 'Peach'];
 // let moreFruit = [...fruit];
 // fruit.push('Orange');
 // console.log(moreFruit)
-
-
+//////////////////////////////////////////////////////////////////////////
 // const getN = async n=> await n;
 // const getM = m => Promise.resolve(m);
-
 // console.log( getN('2'));
 // console.log( getM('3'));
-
 // (()=>{
 //     let x = (y=10);
 // })();
-
 // console.log(typeof x);
 // console.log(typeof y);
-
-
+//////////////////////////////////////////////////////////////////////////
 // const arr = [1,2,3];
 // arr[10] = 99;
 // console.log(arr[6])
-
-
+//////////////////////////////////////////////////////////////////////////
 // for (var i = 0; i < 5; i++) {
 //     setTimeout(function() { console.log(i); }, i * 1000 );
 //   }
-
+//////////////////////////////////////////////////////////////////////////
 // var length = 10;
 // function fn() {
 // 	console.log(this.length);
 // }
-
+//////////////////////////////////////////////////////////////////////////
 // var obj = {
 //   length: 5,
 //   method: function(fn) {
@@ -147,49 +141,41 @@ function reverseWords(str){
 //     arguments[0]();
 //   }
 // };
-
 // obj.method(fn, 1);
-
+//////////////////////////////////////////////////////////////////////////
 // var hero = {
 //     _name: 'John Doe',
 //     getSecretIdentity: function (){
 //         return this._name;
 //     }
 // };
-
 // var stoleSecretIdentity = hero.getSecretIdentity;
-
 // console.log(stoleSecretIdentity());//undefind
 // console.log(hero.getSecretIdentity());//'John Doe'
-
+//////////////////////////////////////////////////////////////////////////
 // (function(x) {
 //     return (function(y) {
 //         console.log(x);
 //     })(2)
 // })(1);
-
 // console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
-
+//////////////////////////////////////////////////////////////////////////
 // var a={},
 //     b={key:'b'},
 //     c={key:'c'};
-
 // a[b]=123;
 // a[c]=456;
-
 // console.log(a[b]);//456
-
+//////////////////////////////////////////////////////////////////////////
 // console.log(false == '0')//true
 // console.log(false === '0')//false
-
+//////////////////////////////////////////////////////////////////////////
 // console.log("0 || 1 = "+(0 || 1));//1
 // console.log("1 || 2 = "+(1 || 2));//1
 // console.log("0 && 1 = "+(0 && 1));//0
 // console.log("1 && 2 = "+(1 && 2));//2
-
-
+//////////////////////////////////////////////////////////////////////////
 // var globalVar = "xyz";
-
 // (function outerFunc(outerArg) {
 //     var outerVar = 'a';
     
@@ -205,29 +191,27 @@ function reverseWords(str){
     
 //     })(456);
 // })(123);
-
-
+//////////////////////////////////////////////////////////////////////////
 // console.log(1 +  "2" + "2");//122
 // console.log(1 +  +"2" + "2");//32
 // console.log(1 +  -"1" + "2");//02
 // console.log(+"1" +  "1" + "2");//112
 // console.log( "A" - "B" + "2");//Nan2
 // console.log( "A" - "B" + 2);//Nan
-
-
+//////////////////////////////////////////////////////////////////////////
 // var arr1 = "john".split('');
 // var arr2 = arr1.reverse();
 // var arr3 = "jones".split('');
 // arr2.push(arr3);
 // console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));//5
 // console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));//5
-
+//////////////////////////////////////////////////////////////////////////
 // var d = {};
 // [ 'zebra', 'horse' ].forEach(function(k) {
 // 	d[k] = undefined;
 // });
 // console.log(d)
-
+//////////////////////////////////////////////////////////////////////////
 // function sum(a, b) {
 //     if (b !== undefined) {
 //         return a + b
@@ -238,8 +222,7 @@ function reverseWords(str){
 // }
 // console.log(sum(2, 3));   // Outputs 5
 // console.log(sum(2)(3));  // Outputs 5
-
-
+//////////////////////////////////////////////////////////////////////////
 // var myObject = {
 //     foo: "bar",
 //     func: function() {
@@ -253,21 +236,17 @@ function reverseWords(str){
 //     }
 // };
 // myObject.func();
-
-
+//////////////////////////////////////////////////////////////////////////
 // (function(){
 //     var a = b = 3;
 //   })();
 //   console.log("a defined? " + (typeof a !== 'undefined'));//false
 //   console.log("b defined? " + (typeof b !== 'undefined'));//true
-
+//////////////////////////////////////////////////////////////////////////
 // const arr = [7, 'correct', 0, false, 9, NaN, ''];
 // const res = arr.filter((item) => !!item);
 // console.log(res)
-
-
-
-
+//////////////////////////////////////////////////////////////////////////
 // const array = [10, 2, 1, 7, 5, 6, 6];
 // let newArr = [];
 // // array.reverse(array);
@@ -289,16 +268,13 @@ function reverseWords(str){
 // // users.sort((a, b) => a.age - b.age)
 // users.sort((a, b) => a.name.localeCompare(b.name))
 // console.log(users)
-
-
+//////////////////////////////////////////////////////////////////////////
 // const array = [10, 2, 1, 7, 5, 6, 6];
-
 // let result = array.sort((a, b) => a - b)
 // let min = array.sort((a, b) => b - a)
 // console.log(result)
 // console.log(min)
-
-
+//////////////////////////////////////////////////////////////////////////
 // let max = array[0];
 // let min = array[0];
 // for (let i = 0; i < array.length; i++) {
@@ -312,25 +288,21 @@ function reverseWords(str){
 // }
 // let max = Math.max.apply(null,array)
 // let min = Math.min.apply(null,array)
-
+//////////////////////////////////////////////////////////////////////////
 // let max = array.reduce((accum, next) => accum > next ? accum : next)
 // let min = array.reduce((accum, next) => accum < next ? accum : next)
 // console.log(max)
 // console.log(min)
-
-
-
+//////////////////////////////////////////////////////////////////////////
 // const sum = array.reduce((accum, prev) => accum + prev, 0);
 // console.log(sum)
-
+//////////////////////////////////////////////////////////////////////////
 // let result = 0;
 // for (let i = 0; i < array.length; i++) {
 //     result += array[i]
 // }
 // console.log(result)
-
-
-
+//////////////////////////////////////////////////////////////////////////
 // function pl(s) {
 //     let c = '';
 //     for (let i = 0; i < s.length; i++) {
@@ -344,16 +316,14 @@ function reverseWords(str){
 //     console.log(c)
 // }
 // pl('minusplusminusminusplusminus')
-
+//////////////////////////////////////////////////////////////////////////
 // let person = {name:'Jonh'};
 // const members = [person];
 // console.log(members)
 // person = null;
 // console.log(members)
 // console.log(person)
-
-
-
+//////////////////////////////////////////////////////////////////////////
 // const a = 'g';
 // console.log(a == NaN? 'y': 'g')
 //////////////////////////////////////////////////////////////////////////
@@ -490,7 +460,7 @@ function reverseWords(str){
 //     r: [8],
 //     w: [6],
 // }
-
+//////////////////////////////////////////////////////////////////////////
 // const data2 = {
 //     ' ': [1, 6],
 //     '!': [17],
