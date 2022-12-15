@@ -1,24 +1,38 @@
-function compare(a, b){
-    let str1 = a.toLowerCase();
-    let str2 = b.toLowerCase();
-    for(let i = 0, maxLength = Math.max(str1.length, str2.length); i<=maxLength; i++){
-        if(i === maxLength){
-           return 0
-        } 
-        if(str1[i] > str2[i]){
-            return 1
-        }
-        if(str1[i] < str2[i]){
-            return -1
-        } 
-    } 
+function fakeBin(x){
+    let result = '';
+for(let i = 0; i<x.length; i++){
+    if(x[i] < 5){
+result += '0';
+    } else {
+        result += '1'
+    }
 }
-console.log(compare('abc','abc')) 
+return result
+}
+
+console.log(fakeBin('45385593107843568'))
+
+
+// const set = new Set([1,1,2,3,4]);
+// console.log(set)
+
+// function compare(a, b){
+//     let str1 = a.toLowerCase();
+//     let str2 = b.toLowerCase();
+//     for(let i = 0, maxLength = Math.max(str1.length, str2.length); i<=maxLength; i++){
+//         if(i === maxLength){
+//            return 0
+//         } 
+//         if(str1[i] > str2[i]){
+//             return 1
+//         }
+//         if(str1[i] < str2[i]){
+//             return -1
+//         } 
+//     } 
+// }
+// console.log(compare('abc','abc')) 
     
-
-
-
-
 
 // function func(s, a, b){
 //     var match_empty=/^$/ ;
