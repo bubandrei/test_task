@@ -13,8 +13,9 @@ function isIsogram(str){
     result = 0;
   }
   return true
+  // return new Set(str.toUpperCase()).size == str.length;
 }
-console.log(isIsogram("aba"))
+console.log(isIsogram("abaaa"))
 //////////////////////////////////////////////////////////////////////////
 // function filter_list(l) {
 //   return l.filter((el)=> Number.isInteger(el))
