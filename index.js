@@ -1,8 +1,26 @@
-function filter_list(l) {
-  return l.filter((el)=> Number.isInteger(el))
-//  return l.filter((el)=> isFinite(el) && el === parseInt(el, 10))
+function isIsogram(str){
+  let arr = str.toLowerCase().split('');
+  let result = 0;
+  for(let i = 0; i<arr.length; i++){
+    for(let j = 0; j<arr.length; j++){
+      if(arr[i] === arr[j]){
+        result +=1;
+      }
+    }
+    if(result > 1){
+      return false
+    }
+    result = 0;
+  }
+  return true
 }
-console.log(filter_list([1,2,'a','b']))
+console.log(isIsogram("aba"))
+//////////////////////////////////////////////////////////////////////////
+// function filter_list(l) {
+//   return l.filter((el)=> Number.isInteger(el))
+// //  return l.filter((el)=> isFinite(el) && el === parseInt(el, 10))
+// }
+// console.log(filter_list([1,2,'a','b']))
 //////////////////////////////////////////////////////////////////////////
 // function hero(bullets, dragons){
 //   return dragons*2<=bullets? true:false
