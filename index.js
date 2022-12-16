@@ -1,11 +1,22 @@
-var min = function(list){
-  return Math.min.apply(null,list)
-}
-var max = function(list){ 
-  return Math.max.apply(null,list)
-}
-console.log(min([-52, 56, 30, 29, -54, 0, -110]))
-console.log(max([-52, 56, 30, 29, -54, 0, -110]))
+
+//////////////////////////////////////////////////////////////////////////
+// function countBy(x, n) {
+//   let z = [];
+//   for (let i = 1; i <= n; i++) {
+//     z.push(x * i);
+//   }
+//   return z;
+// }
+// console.log(countBy(1, 10))
+//////////////////////////////////////////////////////////////////////////
+// var min = function(list){
+//   return Math.min.apply(null,list)
+// }
+// var max = function(list){ 
+//   return Math.max.apply(null,list)
+// }
+// console.log(min([-52, 56, 30, 29, -54, 0, -110]))
+// console.log(max([-52, 56, 30, 29, -54, 0, -110]))
 //////////////////////////////////////////////////////////////////////////
 // function litres(time) {
 //   return Math.floor(time*0.5)
@@ -30,7 +41,7 @@ console.log(max([-52, 56, 30, 29, -54, 0, -110]))
 //     result = 0;
 //   }
 //   return true
-  // return new Set(str.toUpperCase()).size == str.length;
+// return new Set(str.toUpperCase()).size == str.length;
 // }
 // console.log(isIsogram("abaaa"))
 //////////////////////////////////////////////////////////////////////////
@@ -130,7 +141,7 @@ console.log(max([-52, 56, 30, 29, -54, 0, -110]))
 //       ? Math.max(s.lastIndexOf(a), s.lastIndexOf(b))
 //       : -1;
 //   };
-  
+
 //   console.log(func('abcdefgh', 'm', 'c'));
 //////////////////////////////////////////////////////////////////////////
 // const add = function addThem(){
@@ -232,17 +243,17 @@ console.log(max([-52, 56, 30, 29, -54, 0, -110]))
 // var globalVar = "xyz";
 // (function outerFunc(outerArg) {
 //     var outerVar = 'a';
-    
+
 //     (function innerFunc(innerArg) {
 //     var innerVar = 'b';
-    
+
 //     console.log(
 //         "outerArg = " + outerArg + "\n" +//123
 //         "innerArg = " + innerArg + "\n" +//456
 //         "outerVar = " + outerVar + "\n" +//a
 //         "innerVar = " + innerVar + "\n" +//b
 //         "globalVar = " + globalVar);//xyz
-    
+
 //     })(456);
 // })(123);
 //////////////////////////////////////////////////////////////////////////
