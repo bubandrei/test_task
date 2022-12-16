@@ -1,21 +1,29 @@
-function isIsogram(str){
-  let arr = str.toLowerCase().split('');
-  let result = 0;
-  for(let i = 0; i<arr.length; i++){
-    for(let j = 0; j<arr.length; j++){
-      if(arr[i] === arr[j]){
-        result +=1;
-      }
-    }
-    if(result > 1){
-      return false
-    }
-    result = 0;
-  }
-  return true
-  // return new Set(str.toUpperCase()).size == str.length;
+function litres(time) {
+  return Math.floor(time*0.5)
 }
-console.log(isIsogram("abaaa"))
+console.log(litres(3))
+// var a;
+// a = 0;
+// a++;
+// console.log(a)
+// function isIsogram(str){
+//   let arr = str.toLowerCase().split('');
+//   let result = 0;
+//   for(let i = 0; i<arr.length; i++){
+//     for(let j = 0; j<arr.length; j++){
+//       if(arr[i] === arr[j]){
+//         result +=1;
+//       }
+//     }
+//     if(result > 1){
+//       return false
+//     }
+//     result = 0;
+//   }
+//   return true
+  // return new Set(str.toUpperCase()).size == str.length;
+// }
+// console.log(isIsogram("abaaa"))
 //////////////////////////////////////////////////////////////////////////
 // function filter_list(l) {
 //   return l.filter((el)=> Number.isInteger(el))
