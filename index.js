@@ -1,8 +1,37 @@
-function smash(words) {
-  return words.join(' ')
-};
-console.log(smash(["this", "is", "a", "really", "long", "sentence"]))
+var str = "How can mirrors be real if our eyes aren't real";
+function capitalize(str) {
+  return str.split(' ').map((el) => {
+    return el[0].toUpperCase() + el.substring(1)
+  }).join(' ')
+}
+console.log(capitalize(str))
 
+
+// function XO(str) {
+//   let newStr = str.toLowerCase();
+//   let a = 0;
+//   let b = 0;
+//   for (let i = 0; i < newStr.length; i++) {
+//     if (newStr[i] === 'x') {
+//       a += 1
+//     }
+//     if (newStr[i] === 'o') {
+//       b += 1
+//     }
+//   }
+//   if (a != b)
+//     return false
+//   return true
+// }
+// console.log(XO("xxOoo"))
+
+
+//////////////////////////////////////////////////////////////////////////
+// function smash(words) {
+//   return words.join(' ')
+// };
+// console.log(smash(["this", "is", "a", "really", "long", "sentence"]))
+//////////////////////////////////////////////////////////////////////////
 // function getAverage(marks) {
 //   return Math.floor(marks.reduce((accum, next) => accum + next, 0) / marks.length)
 // }
