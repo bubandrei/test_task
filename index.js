@@ -1,7 +1,16 @@
-function litres(time) {
-  return Math.floor(time*0.5)
+var min = function(list){
+  return Math.min.apply(null,list)
 }
-console.log(litres(3))
+var max = function(list){ 
+  return Math.max.apply(null,list)
+}
+console.log(min([-52, 56, 30, 29, -54, 0, -110]))
+console.log(max([-52, 56, 30, 29, -54, 0, -110]))
+//////////////////////////////////////////////////////////////////////////
+// function litres(time) {
+//   return Math.floor(time*0.5)
+// }
+// console.log(litres(3))
 // var a;
 // a = 0;
 // a++;
