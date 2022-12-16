@@ -1,4 +1,7 @@
-
+function getAverage(marks) {
+  return Math.floor(marks.reduce((accum, next) => accum + next, 0) / marks.length)
+}
+console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]))
 //////////////////////////////////////////////////////////////////////////
 // function countBy(x, n) {
 //   let z = [];
