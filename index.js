@@ -1,9 +1,26 @@
-
-function findShort(s){
-return s.split(' ').reduce((accum, next)=> accum.length<next.length?accum:next).length
+function DNAStrand(dna) {
+  let result = '';
+  if (dna != undefined && dna != '') {
+    for (let i = 0; i < dna.length; i++) {
+      if (dna[i] === 'A') {
+        result += 'T'
+      } else if (dna[i] === 'T') {
+        result += 'A'
+      } else if (dna[i] === 'C') {
+        result += 'G'
+      } else if (dna[i] === 'G') {
+        result += 'C'
+      } 
+    }
+  }
+  return result
 }
-console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
-
+console.log(DNAStrand("ATTGC"))
+//////////////////////////////////////////////////////////////////////////
+// function findShort(s){
+// return s.split(' ').reduce((accum, next)=> accum.length<next.length?accum:next).length
+// }
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
 //////////////////////////////////////////////////////////////////////////
 // var str = "How can mirrors be real if our eyes aren't real";
 // function capitalize(str) {
