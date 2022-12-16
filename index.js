@@ -1,7 +1,12 @@
-function getAverage(marks) {
-  return Math.floor(marks.reduce((accum, next) => accum + next, 0) / marks.length)
-}
-console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]))
+function smash(words) {
+  return words.join(' ')
+};
+console.log(smash(["this", "is", "a", "really", "long", "sentence"]))
+
+// function getAverage(marks) {
+//   return Math.floor(marks.reduce((accum, next) => accum + next, 0) / marks.length)
+// }
+// console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]))
 //////////////////////////////////////////////////////////////////////////
 // function countBy(x, n) {
 //   let z = [];
