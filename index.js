@@ -1,12 +1,18 @@
-var str = "How can mirrors be real if our eyes aren't real";
-function capitalize(str) {
-  return str.split(' ').map((el) => {
-    return el[0].toUpperCase() + el.substring(1)
-  }).join(' ')
+
+function findShort(s){
+return s.split(' ').reduce((accum, next)=> accum.length<next.length?accum:next).length
 }
-console.log(capitalize(str))
+console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
 
-
+//////////////////////////////////////////////////////////////////////////
+// var str = "How can mirrors be real if our eyes aren't real";
+// function capitalize(str) {
+//   return str.split(' ').map((el) => {
+//     return el[0].toUpperCase() + el.substring(1)
+//   }).join(' ')
+// }
+// console.log(capitalize(str))
+//////////////////////////////////////////////////////////////////////////
 // function XO(str) {
 //   let newStr = str.toLowerCase();
 //   let a = 0;
@@ -24,8 +30,6 @@ console.log(capitalize(str))
 //   return true
 // }
 // console.log(XO("xxOoo"))
-
-
 //////////////////////////////////////////////////////////////////////////
 // function smash(words) {
 //   return words.join(' ')
