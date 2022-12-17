@@ -1,21 +1,47 @@
-function DNAStrand(dna) {
-  let result = '';
-  if (dna != undefined && dna != '') {
-    for (let i = 0; i < dna.length; i++) {
-      if (dna[i] === 'A') {
-        result += 'T'
-      } else if (dna[i] === 'T') {
-        result += 'A'
-      } else if (dna[i] === 'C') {
-        result += 'G'
-      } else if (dna[i] === 'G') {
-        result += 'C'
-      } 
-    }
+const rps = (p1, p2) => {
+  if (p1 === p2) {
+    return 'Draw'
   }
-  return result
-}
-console.log(DNAStrand("ATTGC"))
+  if (p1 === 'scissors' && p2 === 'rock') {
+    return 2
+  }
+  if (p1 === 'rock' && p2 === 'paper') {
+    return 2
+  }
+  if (p1 === 'paper' && p2 === 'scissors') {
+    return 2
+  }
+  return 1
+};
+console.log(rps('scissors', 'scissors'))
+//////////////////////////////////////////////////////////////////////////
+// function maskify(cc) {
+//   const arr = cc.split('');
+//   for (let i = arr.length - 5; i >= 0; i--) {
+//     arr[i] = '#'
+//   }
+//   return arr.join('')
+// }
+// console.log(maskify('4556364607935616'))
+//////////////////////////////////////////////////////////////////////////
+// function DNAStrand(dna) {
+//   let result = '';
+//   if (dna != undefined && dna != '') {
+//     for (let i = 0; i < dna.length; i++) {
+//       if (dna[i] === 'A') {
+//         result += 'T'
+//       } else if (dna[i] === 'T') {
+//         result += 'A'
+//       } else if (dna[i] === 'C') {
+//         result += 'G'
+//       } else if (dna[i] === 'G') {
+//         result += 'C'
+//       } 
+//     }
+//   }
+//   return result
+// }
+// console.log(DNAStrand("ATTGC"))
 //////////////////////////////////////////////////////////////////////////
 // function findShort(s){
 // return s.split(' ').reduce((accum, next)=> accum.length<next.length?accum:next).length
