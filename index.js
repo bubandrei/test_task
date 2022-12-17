@@ -1,8 +1,12 @@
-function longest(s1, s2) {
-return [...new Set(s1+s2)].sort().join('')
+function friend(friends){
+return friends.filter((el)=>el.length === 4)
 }
-console.log(longest("aretheyhere", "yestheyarehere"))
-
+console.log(friend(["Ryan", "Kieran", "Mark"]))
+//////////////////////////////////////////////////////////////////////////
+// function longest(s1, s2) {
+// return [...new Set(s1+s2)].sort().join('')
+// }
+// console.log(longest("aretheyhere", "yestheyarehere"))
 //////////////////////////////////////////////////////////////////////////
 // function getSum(a, b) {
 //   const arr = [];
