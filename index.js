@@ -1,19 +1,39 @@
-const rps = (p1, p2) => {
-  if (p1 === p2) {
-    return 'Draw'
-  }
-  if (p1 === 'scissors' && p2 === 'rock') {
-    return 2
-  }
-  if (p1 === 'rock' && p2 === 'paper') {
-    return 2
-  }
-  if (p1 === 'paper' && p2 === 'scissors') {
-    return 2
-  }
-  return 1
-};
-console.log(rps('scissors', 'scissors'))
+
+
+//////////////////////////////////////////////////////////////////////////
+// function monkeyCount(n) {
+//   let arr = [];
+// for(let i = 1; i<=n; i++){
+//   arr.push(i)
+// }
+//   return arr
+// }
+// console.log((monkeyCount(5)))
+//////////////////////////////////////////////////////////////////////////
+// function sumArray(array) {
+//   if (array != null) {
+//     return array.sort((a, b) => a - b).slice(1,array.length-1).reduce((accum,next)=>accum+next,0)
+//   }
+//   return 0
+// }
+// console.log(sumArray([null]))
+//////////////////////////////////////////////////////////////////////////
+// const rps = (p1, p2) => {
+//   if (p1 === p2) {
+//     return 'Draw'
+//   }
+//   if (p1 === 'scissors' && p2 === 'rock') {
+//     return 2
+//   }
+//   if (p1 === 'rock' && p2 === 'paper') {
+//     return 2
+//   }
+//   if (p1 === 'paper' && p2 === 'scissors') {
+//     return 2
+//   }
+//   return 1
+// };
+// console.log(rps('scissors', 'scissors'))
 //////////////////////////////////////////////////////////////////////////
 // function maskify(cc) {
 //   const arr = cc.split('');
