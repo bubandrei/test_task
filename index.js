@@ -1,14 +1,32 @@
-function spinWords(string) {
-  const arr = string.split(' ').map((el) => {
-    if (el.length >= 5) {
-      return el.split('').reverse().join('')
-    } else {
-      return el
-    }
-  }).join(' ')
-  return arr
+function max(...arg) {
+  if (arg.length === 0 || arg[0].length === 0) return 0
+  const arrFlat = arg.flat(Infinity).map((el) => { return Number(el) })
+  if (arrFlat.includes(NaN)) return NaN
+  return arrFlat.reduce((accum, next) => accum > next ? accum : next)
 }
-console.log(spinWords("Hey fellow warriors"))
+
+function min(...arg) {
+  if (arg.length === 0 || arg[0].length === 0) return 0
+  const arrFlat = arg.flat(Infinity).map((el) => { return Number(el) })
+  if (arrFlat.includes(NaN)) return NaN
+  return arrFlat.reduce((accum, next) => accum < next ? accum : next)
+}
+// console.log(max([[], [-4]]));
+// console.log(max(1, 2, [3, ['4r']]));
+// console.log(max(1, 2, 3, ['4']));
+console.log(min(1, 2, [3, [4, 0]]));
+//////////////////////////////////////////////////////////////////////////
+// function spinWords(string) {
+//   const arr = string.split(' ').map((el) => {
+//     if (el.length >= 5) {
+//       return el.split('').reverse().join('')
+//     } else {
+//       return el
+//     }
+//   }).join(' ')
+//   return arr
+// }
+// console.log(spinWords("Hey fellow warriors"))
 //////////////////////////////////////////////////////////////////////////
 // function findNextSquare(sq) {
 //   if (Number.isInteger(Math.sqrt(sq))) {
