@@ -1,5 +1,22 @@
 
-
+//////////////////////////////////////////////////////////////////////////
+// function getSum(a, b) {
+//   const arr = [];
+//   if (a === b) {
+//     return a
+//   }
+//   if (b < a) {
+//     for (let i = b; i <= a; i++) {
+//       arr.push(i)
+//     }
+//   } else {
+//     for (let i = a; i <= b; i++) {
+//       arr.push(i)
+//     }
+//   } 
+//   return arr.reduce((accum, next) => accum + next, 0)
+// }
+// console.log(getSum(0,-1))
 //////////////////////////////////////////////////////////////////////////
 // function monkeyCount(n) {
 //   let arr = [];
