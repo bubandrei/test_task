@@ -1,13 +1,25 @@
-function findNextSquare(sq) {
-  if (Number.isInteger(Math.sqrt(sq))) {
-    let num = Math.sqrt(sq);
-    let newNum = Math.pow(num + 1, 2)
-    return newNum
-  }
-  return -1
+function spinWords(string) {
+  const arr = string.split(' ').map((el) => {
+    if (el.length >= 5) {
+      return el.split('').reverse().join('')
+    } else {
+      return el
+    }
+  }).join(' ')
+  return arr
 }
-console.log(findNextSquare(120))
-
+console.log(spinWords("Hey fellow warriors"))
+//////////////////////////////////////////////////////////////////////////
+// function findNextSquare(sq) {
+//   if (Number.isInteger(Math.sqrt(sq))) {
+//     let num = Math.sqrt(sq);
+//     let newNum = Math.pow(num + 1, 2)
+//     return newNum
+//   }
+//   return -1
+// }
+// console.log(findNextSquare(120))
+//////////////////////////////////////////////////////////////////////////
 // function openOrSenior(data) {
 //   return data.map((el) => {
 //     if (el[0] >= 55 && el[1] > 7) {
