@@ -1,13 +1,23 @@
-function openOrSenior(data) {
-  return data.map((el) => {
-    if (el[0] >= 55 && el[1] > 7) {
-      return 'Senior'
-    } else {
-      return 'Open'
-    }
-  })
+function findNextSquare(sq) {
+  if (Number.isInteger(Math.sqrt(sq))) {
+    let num = Math.sqrt(sq);
+    let newNum = Math.pow(num + 1, 2)
+    return newNum
+  }
+  return -1
 }
-console.log(openOrSenior([[45, 12], [55, 21], [19, -2], [104, 20]]))
+console.log(findNextSquare(120))
+
+// function openOrSenior(data) {
+//   return data.map((el) => {
+//     if (el[0] >= 55 && el[1] > 7) {
+//       return 'Senior'
+//     } else {
+//       return 'Open'
+//     }
+//   })
+// }
+// console.log(openOrSenior([[45, 12], [55, 21], [19, -2], [104, 20]]))
 //////////////////////////////////////////////////////////////////////////
 // function friend(friends) {
 //   return friends.filter((el) => el.length === 4)
