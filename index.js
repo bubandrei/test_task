@@ -6,7 +6,7 @@ function findOdd(A) {
         count++
       }
     }
-    if(count%2 != 0){
+    if (count % 2 != 0) {
       return A[i]
     }
   }
