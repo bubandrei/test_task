@@ -1,20 +1,37 @@
-function max(...arg) {
-  if (arg.length === 0 || arg[0].length === 0) return 0
-  const arrFlat = arg.flat(Infinity).map((el) => { return Number(el) })
-  if (arrFlat.includes(NaN)) return NaN
-  return arrFlat.reduce((accum, next) => accum > next ? accum : next)
+function findOdd(A) {
+  let count = 0;
+  for (let i = 0; i < A.length; i++) {
+    for (let j = 0; j < A.length; j++) {
+      if (A[i] === A[j]) {
+        count++
+      }
+    }
+    if(count%2 != 0){
+      return A[i]
+    }
+  }
 }
+console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]))
 
-function min(...arg) {
-  if (arg.length === 0 || arg[0].length === 0) return 0
-  const arrFlat = arg.flat(Infinity).map((el) => { return Number(el) })
-  if (arrFlat.includes(NaN)) return NaN
-  return arrFlat.reduce((accum, next) => accum < next ? accum : next)
-}
+
+//////////////////////////////////////////////////////////////////////////
+// function max(...arg) {
+//   if (arg.length === 0 || arg[0].length === 0) return 0
+//   const arrFlat = arg.flat(Infinity).map((el) => { return Number(el) })
+//   if (arrFlat.includes(NaN)) return NaN
+//   return arrFlat.reduce((accum, next) => accum > next ? accum : next)
+// }
+
+// function min(...arg) {
+//   if (arg.length === 0 || arg[0].length === 0) return 0
+//   const arrFlat = arg.flat(Infinity).map((el) => { return Number(el) })
+//   if (arrFlat.includes(NaN)) return NaN
+//   return arrFlat.reduce((accum, next) => accum < next ? accum : next)
+// }
 // console.log(max([[], [-4]]));
 // console.log(max(1, 2, [3, ['4r']]));
 // console.log(max(1, 2, 3, ['4']));
-console.log(min(1, 2, [3, [4, 0]]));
+// console.log(min(1, 2, [3, [4, 0]]));
 //////////////////////////////////////////////////////////////////////////
 // function spinWords(string) {
 //   const arr = string.split(' ').map((el) => {
