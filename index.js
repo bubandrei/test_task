@@ -1,19 +1,18 @@
-function findOdd(A) {
-  let count = 0;
-  for (let i = 0; i < A.length; i++) {
-    for (let j = 0; j < A.length; j++) {
-      if (A[i] === A[j]) {
-        count++
-      }
-    }
-    if (count % 2 != 0) {
-      return A[i]
-    }
-  }
-}
-console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]))
-
-
+//////////////////////////////////////////////////////////////////////////
+// function findOdd(A) {
+//   let count = 0;
+//   for (let i = 0; i < A.length; i++) {
+//     for (let j = 0; j < A.length; j++) {
+//       if (A[i] === A[j]) {
+//         count++
+//       }
+//     }
+//     if (count % 2 != 0) {
+//       return A[i]
+//     }
+//   }
+// }
+// console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]))
 //////////////////////////////////////////////////////////////////////////
 // function max(...arg) {
 //   if (arg.length === 0 || arg[0].length === 0) return 0
