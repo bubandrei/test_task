@@ -1,10 +1,20 @@
-function removeSmallest(numbers) {
-    let find = numbers.indexOf(Math.min.apply(null, numbers));
-    return numbers.filter((el, index) => index != find)
-
+function nbYear(p0, percent, aug, p) {
+    let years = 0;
+    while (p0 < p) {
+        p0 += Math.floor(p0 * (percent / 100) + aug);
+        years++;
+    }
+    return years
 }
-console.log(removeSmallest([1, 2, 3, 4, 5]))
+console.log(nbYear(1500, 5, 100, 5000))
 
+
+//////////////////////////////////////////////////////////////////////////
+// function removeSmallest(numbers) {
+//     let find = numbers.indexOf(Math.min.apply(null, numbers));
+//     return numbers.filter((el, index) => index != find)
+// }
+// console.log(removeSmallest([1, 2, 3, 4, 5]))
 //////////////////////////////////////////////////////////////////////////
 // function rowSumOddNumbers(n) {
 //     return Math.pow(n, 3)
