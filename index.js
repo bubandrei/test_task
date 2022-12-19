@@ -1,13 +1,15 @@
-function rowSumOddNumbers(n) {
-    return Math.pow(n, 3)
+function removeSmallest(numbers) {
+    let find = numbers.indexOf(Math.min.apply(null, numbers));
+    return numbers.filter((el, index) => index != find)
+
 }
+console.log(removeSmallest([1, 2, 3, 4, 5]))
 
-console.log(rowSumOddNumbers(42))
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////
+// function rowSumOddNumbers(n) {
+//     return Math.pow(n, 3)
+// }
+// console.log(rowSumOddNumbers(42))
 //////////////////////////////////////////////////////////////////////////
 // function findOdd(A) {
 //   let count = 0;
