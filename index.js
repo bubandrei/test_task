@@ -1,14 +1,53 @@
-function nbYear(p0, percent, aug, p) {
-    let years = 0;
-    while (p0 < p) {
-        p0 += Math.floor(p0 * (percent / 100) + aug);
-        years++;
+function foo(a, b) {
+    if (a % 2 === 0 && b % 2 === 0) {
+        return a * b
+    } else if (a % 2 != 0 && b % 2 != 0) {
+        return a + b
+    } else if (a % 2 === 0 && b % 2 != 0) {
+        return b
+    } else {
+        return a
     }
-    return years
 }
-console.log(nbYear(1500, 5, 100, 5000))
+console.log(foo(3, 3))
+//////////////////////////////////////////////////////////////////////////
+// const USERS_URL = 'https://jsonplaceholder.typicode.com/users';
 
+// async function getData(url) {
+//     const list = await fetch(url);
+//     console.log(list)
+//     let res = await list.json();
+//     return res
 
+//     }
+// console.log(getData(USERS_URL))
+
+// const obj = {
+//     a: this,
+//     b: function () {
+//         return this
+//     },
+//     c: () => {
+//         return this
+//     },
+//     d(){
+//         return this
+//     },
+//     e:function(){
+//         return this.a
+//     }
+// }
+// console.log(obj.e)
+//////////////////////////////////////////////////////////////////////////
+// function nbYear(p0, percent, aug, p) {
+//     let years = 0;
+//     while (p0 < p) {
+//         p0 += Math.floor(p0 * (percent / 100) + aug);
+//         years++;
+//     }
+//     return years
+// }
+// console.log(nbYear(1500, 5, 100, 5000))
 //////////////////////////////////////////////////////////////////////////
 // function removeSmallest(numbers) {
 //     let find = numbers.indexOf(Math.min.apply(null, numbers));
