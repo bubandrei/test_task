@@ -1,25 +1,46 @@
-function foo(a, b) {
-    if (a % 2 === 0 && b % 2 === 0) {
-        return a * b
-    } else if (a % 2 != 0 && b % 2 != 0) {
-        return a + b
-    } else if (a % 2 === 0 && b % 2 != 0) {
-        return b
-    } else {
-        return a
+function doubleChar(str) {
+    let newStr = '';
+    for (let i = 0; i < str.length; i++) {
+        newStr += str[i] + str[i]
     }
+    return newStr
 }
-console.log(foo(3, 3))
+console.log(doubleChar('Adidas'))
+
+
+// const food = [
+//     { name: 'Pasta', weight: 350, price: 68, quantity: 10 },
+//     { name: 'Potatoes', weight: 350, price: 56, quantity: 8 },
+//     { name: 'Apple', weight: 450, price: 68, quantity: 16 },
+//     { name: 'Orange', weight: 675, price: 139, quantity: 30 },
+// ]
+// function getWeigth(food) {
+//     const arr = food.reduce((accum, next) => next.price < 70 && next.quantity < 15 ? accum + next.weight * next.quantity : accum, 0)
+//     console.log(arr)
+// }
+// getWeigth(food)
+
+//  let a = 2;
+//  const b = {};
+
+//  console.log(a == b
+//     )
+//////////////////////////////////////////////////////////////////////////
+// function foo(a, b) {
+//     if (a % 2 === 0 && b % 2 === 0) {
+//         return a * b
+//     } else if (a % 2 != 0 && b % 2 != 0) {
+//         return a + b
+//     } else if (a % 2 === 0 && b % 2 != 0) {
+//         return b
+//     } else {
+//         return a
+//     }
+// }
+// console.log(foo(3, 3))
 //////////////////////////////////////////////////////////////////////////
 // const USERS_URL = 'https://jsonplaceholder.typicode.com/users';
 
-// async function getData(url) {
-//     const list = await fetch(url);
-//     console.log(list)
-//     let res = await list.json();
-//     return res
-
-//     }
 // console.log(getData(USERS_URL))
 
 // const obj = {
